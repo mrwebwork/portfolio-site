@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ToggleTheme() {
   const [isDark, setIsDark] = useState(false);
@@ -19,9 +20,7 @@ export default function ToggleTheme() {
     setIsDark(!isDark);
   };
 
-  return (
-    <button className="btn " onClick={toggleTheme}>
-      {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-    </button>
-  );
+  //* Depending on the current mode, select the corresponding icon
+  const icon = isDark ? <FaSun /> : <FaMoon />;
+  return <button onClick={toggleTheme}>{icon}</button>;
 }

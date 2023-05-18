@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+}
+
+/** Dark Mode Colors  */
+.dark {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+/** Button Styles */
+@layer components {
+  .btn {
+    @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;
+  }
+}

@@ -12,7 +12,17 @@ export default function About() {
         pageHeader="Meet Allan Hillman"
         pageDesc="Crafting seamless digital experiences with code."
       />
-      <Paragraph className="text-blue-400">Does text show up?</Paragraph>
+      <Paragraph className="text-black-400 text-xl px-5">
+        As a Front-End Developer, I bring ideas to life in the digital world.
+        With a rich experience in platforms like Shopify and WordPress, and
+        proficiency in HTML5, CSS3, SASS, JavaScript, and React.js, I craft
+        user-friendly interfaces for an exceptional online experience.
+        Collaborating seamlessly with back-end developers, my aim is to create
+        dynamic and responsive websites. My passion fuels my continuous
+        learning, helping me to deliver top-notch results, on time. Always
+        excited for new challenges, I offer my services globally via Fiverr.
+        Let's connect and transform your vision into reality.
+      </Paragraph>
       <Footer />
     </>
   );

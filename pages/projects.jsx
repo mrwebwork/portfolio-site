@@ -48,7 +48,7 @@ export default function Projects() {
           />
           <ProjectCard
             image="https://placehold.jp/150x150.png"
-            text="Messanger"
+            text="Messenger"
             description="Text about a brand goes here x2"
             linkText="Chat Now"
             href="#"

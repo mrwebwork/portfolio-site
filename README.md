@@ -5,7 +5,7 @@ This portfolio website, built with Next.js and React, showcases my front-end dev
 ## Features
 
 - **Dynamic routing:** Each page of the portfolio is automatically routed based on its file name in the `pages` directory.
-- **Reusable components:** Components such as `Header`, `Footer`, and `ProjectCard` are reused across multiple pages, demonstrating DRY (Don't Repeat Yourself) principles.
+- **Reusable components:** Components such as `Header`, `Footer`, `ProjectCard`, `Navbar`, and `ToggleTheme` are reused across multiple pages, demonstrating DRY (Don't Repeat Yourself) principles.
 - **Styling:** Tailwind CSS and CSS Modules are used for component-level styles, resulting in a clean and organized codebase.
 - **Static files:** Static files, like images, are served from the `public` directory.
 - **Deployment:** The site is hosted on GitHub Pages, demonstrating knowledge of version control and continuous deployment practices.
@@ -20,3 +20,4 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+```

@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (
     <>
       <Navbar />
-      <div>About Allan Hillman</div>
+      <Header pageHeader="Meet Allan Hillman" pageDesc="Information about me" />
+      <Footer />
     </>
   );
 }

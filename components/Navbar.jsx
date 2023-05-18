@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import NavLink from "@/styles/styled-components/NavLink";
 import Svg from "@/styles/styled-components/Svg";
 import ToggleTheme from "./ToggleTheme";
 
 export default function Navbar() {
+  const home = "Home";
   const project = "Projects";
   const about = "About";
   const contact = "Contact";
@@ -12,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="relative min-h-screen md:hidden">
+      <div className="relative md:hidden drop-shadow-2xl">
         {/* Mobile Menu Bar */}
         <div className="bg-cyan-800 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">
@@ -54,11 +56,14 @@ export default function Navbar() {
         <div
           className={`bg-cyan-800 text-gray-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
-          } md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden`}
+          } md:relative md:translate-x-0 transition duration-200 ease-in-out min-h-screen md:hidden`}
         >
-          <a href="/" className="text-white flex items-center space-x-2 px-4">
+          <Link
+            href="/"
+            className="text-white flex items-center space-x-2 px-4"
+          >
             <span className="text-2xl font-extrabold">Portfolio</span>
-          </a>
+          </Link>
           <nav>
             <Link
               className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
@@ -94,24 +99,30 @@ export default function Navbar() {
           Allan's Portfolio
         </Link>
         <nav>
-          <Link
+          <NavLink
+            href="/"
+            className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
+          >
+            {home}
+          </NavLink>
+          <NavLink
             href="/projects"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
           >
             {project}
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="/about"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
           >
             {about}
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="/contact"
-            className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))] pe-5"
+            className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
           >
             {contact}
-          </Link>
+          </NavLink>
           <ToggleTheme />
         </nav>
       </div>

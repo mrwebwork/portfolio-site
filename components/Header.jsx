@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({ pageHeader, pageDesc }) {
   return (
     <>
-      <div>Home</div>
+      <main className="container mx-auto">
+        <section className="flex flex-col justify-center my-5 pt-5 px-2 text-center mx-auto">
+          <h1 className="text-5xl">{pageHeader}</h1>
+          <p className="pt-7 text-2xl">{pageDesc}</p>
+        </section>
+      </main>
     </>
   );
 }

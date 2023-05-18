@@ -2,25 +2,33 @@ import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ToggleTheme() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.localStorage.getItem("theme") === "dark";
+    } else {
+      return false;
+    }
+  });
 
-  //* On component mount, check if user has a preferred color scheme
   useEffect(() => {
-    const root = window.document.documentElement;
-    const initialColorValue = root.style.getPropertyValue(
-      "--initial-color-mode"
-    );
-    setIsDark(initialColorValue === "dark");
-  }, []);
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+  }, [isDark]);
 
-  //* Toggle between light and dark mode
   const toggleTheme = () => {
-    let root = window.document.documentElement;
-    root.classList.toggle("dark");
     setIsDark(!isDark);
   };
 
-  //* Depending on the current mode, select the corresponding icon
   const icon = isDark ? <FaSun /> : <FaMoon />;
-  return <button onClick={toggleTheme}>{icon}</button>;
+
+  return (
+    <button className="md:ps-5" onClick={toggleTheme}>
+      {icon}
+    </button>
+  );
 }

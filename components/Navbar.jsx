@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Svg from "@/styles/styled-components/Svg";
 
@@ -7,6 +7,24 @@ export default function Navbar() {
   const about = "About";
   const contact = "Contact";
   const [isOpen, setIsOpen] = useState(false);
+  const node = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (node.current.contains(e.target)) {
+        //* Inside click
+        return;
+      }
+      //* Outside click
+      setIsOpen(false);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="relative min-h-screen md:flex">
@@ -16,7 +34,10 @@ export default function Navbar() {
           Allan's Portfolio
         </a>
         {/* Navigation Button */}
-        <button className="mobile-menu-button p-2 focus:outline-none focus:bg-cyan-700 hover:bg-cyan-800">
+        <button
+          ref={node}
+          className="mobile-menu-button p-2 focus:outline-none focus:bg-cyan-700 "
+        >
           <Svg
             width="50"
             height="50"
@@ -46,11 +67,14 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Desktop Navbar */}
+
       {/* Sidebar */}
       <div
+        ref={node}
         className={`bg-cyan-800 text-gray-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+        } md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden`}
       >
         <a href="/" className="text-white flex items-center space-x-2 px-4">
           <span className="text-2xl font-extrabold">Portfolio</span>

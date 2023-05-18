@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* Mobile Menu Bar */}
         <div className="bg-cyan-800 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">
-            Allan's Portfolio
+            Allan Hillman
           </Link>
 
           {/* Navigation Button */}
@@ -67,6 +67,12 @@ export default function Navbar() {
           <nav>
             <Link
               className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+              href="/"
+            >
+              {home}
+            </Link>
+            <Link
+              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
               href="/projects"
             >
               {project}
@@ -96,7 +102,7 @@ export default function Navbar() {
           href="/"
           className="font-bold text-2xl text-[rgb(var(--foreground-rgb))]"
         >
-          Allan's Portfolio
+          Allan Hillman
         </Link>
         <nav>
           <NavLink

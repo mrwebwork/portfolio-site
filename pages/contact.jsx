@@ -7,7 +7,10 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <Header pageHeader="Contact Me" pageDesc="Reach out to me today" />
+      <Header
+        pageHeader="Contact Me"
+        pageDesc="Let's connect! Excited to discuss your web development needs."
+      />
       <Footer />
     </>
   );

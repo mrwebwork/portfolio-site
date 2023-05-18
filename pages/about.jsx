@@ -7,7 +7,10 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <Header pageHeader="Meet Allan Hillman" pageDesc="Information about me" />
+      <Header
+        pageHeader="Meet Allan Hillman"
+        pageDesc="Crafting seamless digital experiences with code."
+      />
       <Footer />
     </>
   );

@@ -11,7 +11,7 @@ export default function Home() {
         <main className="flex-grow flex flex-col">
           <Header
             pageHeader="Websites made simple for all businesses."
-            pageDesc="Test to see if text shows up"
+            pageDesc="Transforming your vision into a dynamic online presence."
           />
         </main>
         <Footer />

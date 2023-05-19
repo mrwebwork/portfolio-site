@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="relative md:hidden drop-shadow-2xl">
+      <div className="relative md:hidden drop-shadow-2xl z-10">
         {/* Mobile Menu Bar */}
         <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">
@@ -23,7 +23,7 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation Button */}
-          <button className="mobile-menu-button p-2 focus:outline-none focus:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 ">
+          <button className="mobile-menu-button p-2 focus:outline-none">
             <Svg
               width="50"
               height="50"
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Sidebar */}
         <div
-          className={`bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 w-64 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
+          className={`w-1/2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:relative md:translate-x-0 transition duration-200 ease-in-out min-h-screen md:hidden`}
         >
@@ -65,7 +65,7 @@ export default function Navbar() {
           >
             <span className="text-2xl font-extrabold">Portfolio</span>
           </Link>
-          <nav>
+          <nav className="text-xl">
             <SocialMedia />
             <Link
               className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
@@ -107,7 +107,7 @@ export default function Navbar() {
         >
           Allan Hillman
         </Link>
-        <nav className="flex items-center">
+        <nav className="flex items-center text-xl">
           <NavLink
             href="/"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"

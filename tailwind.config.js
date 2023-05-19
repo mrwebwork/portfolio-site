@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       screens: {
         md: "642px",
+        "2xl": "1280px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

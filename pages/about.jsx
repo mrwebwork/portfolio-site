@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import Footer from "@/components/Footer";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function About() {
   return (
@@ -12,6 +13,7 @@ export default function About() {
         pageHeader="Meet Allan Hillman"
         pageDesc="Crafting seamless digital experiences with code."
       />
+      <SocialMedia />
       <Paragraph className="text-black-400 text-xl px-5">
         As a Front-End Developer, I bring ideas to life in the digital world.
         With a rich experience in platforms like Shopify and WordPress, and

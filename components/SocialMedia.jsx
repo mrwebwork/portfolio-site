@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function SocialMedia() {
   return (
-    <div className="container mx-auto flex justify-center">
+    <div className="container mx-auto flex justify-center pb-10">
       <a
         href="https://www.linkedin.com/in/allanhillman"
         target="_blank"

@@ -12,7 +12,7 @@ This portfolio website, built with Next.js and React, showcases my front-end dev
 
 ## Branching Strategy
 
-This project follows a three-tiered branching model to ensure clean and stable code releases. Here's how we use each branch:
+This project follows a three-tiered branching model to ensure clean and stable code releases. Here's how I use each branch:
 
 - **Dev:** The `dev` branch is the working branch where all new features are developed and tested. All feature branches should be merged into `dev` first. This allows me to integrate and validate new changes in a controlled environment before moving them into `staging`.
 

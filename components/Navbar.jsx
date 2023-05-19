@@ -17,13 +17,13 @@ export default function Navbar() {
       {/* Mobile Navbar */}
       <div className="relative md:hidden drop-shadow-2xl">
         {/* Mobile Menu Bar */}
-        <div className="bg-cyan-800 text-gray-100 flex justify-between">
+        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">
             Allan Hillman
           </Link>
 
           {/* Navigation Button */}
-          <button className="mobile-menu-button p-2 focus:outline-none focus:bg-cyan-700 ">
+          <button className="mobile-menu-button p-2 focus:outline-none focus:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 ">
             <Svg
               width="50"
               height="50"
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Sidebar */}
         <div
-          className={`bg-cyan-800 text-gray-100 w-64 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
+          className={`bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 w-64 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:relative md:translate-x-0 transition duration-200 ease-in-out min-h-screen md:hidden`}
         >
@@ -68,25 +68,25 @@ export default function Navbar() {
           <nav>
             <SocialMedia />
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
               href="/"
             >
               {home}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
               href="/projects"
             >
               {project}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
               href="/about"
             >
               {about}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
+              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
               href="/contact"
             >
               {contact}
@@ -107,7 +107,7 @@ export default function Navbar() {
         >
           Allan Hillman
         </Link>
-        <nav className="flex flex-row">
+        <nav className="flex items-center">
           <NavLink
             href="/"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"

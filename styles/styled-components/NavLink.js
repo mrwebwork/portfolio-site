@@ -16,7 +16,7 @@ const NavLink = styled(Link)`
     display: block;
     width: 100%;
     height: 2px;
-    bottom: -3px;
+    bottom: -1px;
     left: 0;
     background-color: rgb(var(--foreground-rgb));
     transform: scaleX(0);

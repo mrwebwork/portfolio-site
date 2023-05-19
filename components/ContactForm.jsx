@@ -197,7 +197,7 @@ export default function ContactForm() {
           <div className="flex flex-row items-center justify-start">
             <button
               type="submit"
-              className="px-10 mt-8 py-2 bg-black dark:bg-white dark:text-black font-light rounded-md text-lg flex flex-row items-center"
+              className="px-10 mt-8 py-2 bg-gray-800 hover:bg-gray-950 dark:bg-gray-50 dark:hover:bg-gray-100 dark:text-black font-light rounded-md text-lg flex flex-row items-center"
             >
               Submit
             </button>

@@ -107,7 +107,7 @@ export default function Navbar() {
         >
           Allan Hillman
         </Link>
-        <nav className="flex">
+        <nav className="flex flex-row">
           <NavLink
             href="/"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
@@ -132,6 +132,7 @@ export default function Navbar() {
           >
             {contact}
           </NavLink>
+          <SocialMedia />
           <ToggleTheme />
         </nav>
       </div>

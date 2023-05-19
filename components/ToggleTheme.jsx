@@ -27,7 +27,7 @@ export default function ToggleTheme() {
   const icon = isDark ? <FaSun size={24} /> : <FaMoon size={24} />;
 
   return (
-    <button className="md:ps-5" onClick={toggleTheme}>
+    <button className="md:ps-5 md:pb-2" onClick={toggleTheme}>
       {icon}
     </button>
   );

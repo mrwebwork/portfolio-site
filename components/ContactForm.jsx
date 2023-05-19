@@ -126,6 +126,7 @@ export default function ContactForm() {
           <input
             type="text"
             value={fullname}
+            placeholder="Enter your first and last name"
             onChange={(e) => {
               setFullname(e.target.value);
             }}
@@ -148,6 +149,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             value={email}
+            placeholder="Enter your email here"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -167,6 +169,7 @@ export default function ContactForm() {
             type="text"
             name="subject"
             value={subject}
+            placeholder="Enter your subject"
             onChange={(e) => {
               setSubject(e.target.value);
             }}
@@ -185,6 +188,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             value={message}
+            placeholder="Type your message here"
             onChange={(e) => {
               setMessage(e.target.value);
             }}

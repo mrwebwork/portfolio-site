@@ -101,7 +101,7 @@ export default function ContactForm() {
       <section className="container mx-auto">
         <form
           onSubmit={handleSubmit}
-          className="rounded-lg shadow-xl flex flex-col px-10 py-8 bg-white dark:bg-black mx-auto w-11/12 lg:w-6/12"
+          className="rounded-lg drop-shadow-2xl flex flex-col px-10 py-8 bg-white dark:bg-black mx-auto w-11/12 lg:w-6/12"
         >
           <h1 className="text-2xl font-bold text-black dark:text-white">
             Send a message
@@ -121,7 +121,7 @@ export default function ContactForm() {
             htmlFor="fullname"
             className="text-black font-light mt-8 dark:text-sky-50"
           >
-            Full name<span className="text-red-500">*</span>
+            Full name<span className="text-red-500 ps-1">*</span>
           </label>
           <input
             type="text"
@@ -130,7 +130,7 @@ export default function ContactForm() {
               setFullname(e.target.value);
             }}
             name="fullname"
-            className={`bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
               errors.fullname ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -142,7 +142,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="text-gray-500 font-light mt-4 dark:text-gray-50"
           >
-            E-mail<span className="text-red-500">*</span>
+            E-mail<span className="text-red-500 ps-1">*</span>
           </label>
           <input
             type="email"
@@ -151,7 +151,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className={`bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
               errors.email ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -161,7 +161,7 @@ export default function ContactForm() {
             htmlFor="subject"
             className="text-gray-500 font-light mt-4 dark:text-gray-50"
           >
-            Subject<span className="text-red-500">*</span>
+            Subject<span className="text-red-500 ps-1">*</span>
           </label>
           <input
             type="text"
@@ -170,7 +170,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            className={`bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
               errors.subject ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -180,7 +180,7 @@ export default function ContactForm() {
             htmlFor="message"
             className="text-gray-500 font-light mt-4 dark:text-gray-50"
           >
-            Message<span className="text-red-500">*</span>
+            Message<span className="text-red-500 ps-1">*</span>
           </label>
           <textarea
             name="message"
@@ -188,7 +188,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className={`bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white  border-b py-5 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
               errors.message ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           ></textarea>
@@ -197,7 +197,7 @@ export default function ContactForm() {
           <div className="flex flex-row items-center justify-start">
             <button
               type="submit"
-              className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+              className="px-10 mt-8 py-2 bg-black dark:bg-white dark:text-black font-light rounded-md text-lg flex flex-row items-center"
             >
               Submit
             </button>

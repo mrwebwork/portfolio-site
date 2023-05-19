@@ -6,6 +6,9 @@ export default function ProjectCard({
   description,
   linkText,
   href,
+  showCodeLink = false, //* Default to not show the link to code
+  codeLink,
+  codeLinkText = "View Code",
 }) {
   return (
     <article className="project-card mb-5 py-10 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-2xl space-y-2 sm:space-y-0 flex flex-col items-center text-center">
@@ -19,10 +22,20 @@ export default function ProjectCard({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+          className="btn-2"
         >
           {linkText}
         </a>
+        {showCodeLink && (
+          <a
+            href={codeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-3"
+          >
+            {codeLinkText}
+          </a>
+        )}
       </div>
     </article>
   );

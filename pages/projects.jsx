@@ -43,8 +43,10 @@ export default function Projects() {
             image="https://placehold.jp/150x150.png"
             text="Netflix"
             description="Text about a brand goes here"
-            linkText="View Movies"
+            linkText="Watch Movies"
             href="#"
+            showCodeLink
+            codeLink="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="https://placehold.jp/150x150.png"
@@ -52,6 +54,8 @@ export default function Projects() {
             description="Text about a brand goes here x2"
             linkText="Chat Now"
             href="#"
+            showCodeLink
+            codeLink="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="https://placehold.jp/150x150.png"
@@ -59,6 +63,8 @@ export default function Projects() {
             description="Text about a brand goes here"
             linkText="Take Notes"
             href="#"
+            showCodeLink
+            codeLink="https://github.com/mrwebwork"
           />
         </section>
         <Header pageHeader="Shopify Webistes" />

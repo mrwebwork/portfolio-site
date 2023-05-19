@@ -101,7 +101,7 @@ export default function ContactForm() {
       <section className="container mx-auto">
         <form
           onSubmit={handleSubmit}
-          className="rounded-lg drop-shadow-2xl flex flex-col px-10 py-8 bg-white dark:bg-black mx-auto w-11/12 lg:w-6/12"
+          className="rounded-lg shadow-2xl flex flex-col px-10 py-8 bg-white dark:bg-black mx-auto w-11/12 lg:w-6/12"
         >
           <h1 className="text-2xl font-bold text-black dark:text-white">
             Send a message

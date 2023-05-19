@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import Footer from "@/components/Footer";
+import FiverrLink from "@/styles/styled-components/FiverrLink";
 
 export default function About() {
   return (
@@ -20,8 +21,15 @@ export default function About() {
         Collaborating seamlessly with back-end developers, my aim is to create
         dynamic and responsive websites. My passion fuels my continuous
         learning, helping me to deliver top-notch results, on time. Always
-        excited for new challenges, I offer my services globally via Fiverr.
-        Let's connect and transform your vision into reality.
+        excited for new challenges, I offer my services globally via{" "}
+        <FiverrLink
+          href="https://www.fiverr.com/allanhillman"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Fiverr
+        </FiverrLink>
+        . Let's connect and transform your vision into reality.
       </Paragraph>
       <Footer />
     </>

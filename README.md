@@ -10,6 +10,16 @@ This portfolio website, built with Next.js and React, showcases my front-end dev
 - **Static files:** Static files, like images, are served from the `public` directory.
 - **Deployment:** The site is hosted on GitHub Pages, demonstrating knowledge of version control and continuous deployment practices.
 
+## Branching Strategy
+
+This project follows a three-tiered branching model to ensure clean and stable code releases. Here's how we use each branch:
+
+- **Dev:** The `dev` branch is the working branch where all new features are developed and tested. All feature branches should be merged into `dev` first. This allows me to integrate and validate new changes in a controlled environment before moving them into `staging`.
+
+- **Staging:** The `staging` branch is used for pre-production testing. Once changes in the `dev` branch have been tested and validated, they are merged into `staging`. This branch mirrors what would be in production and provides a chance to catch any potential issues before they reach the main branch.
+
+- **Main:** The `main` branch reflects the current state of live production code. Changes are only pushed to `main` after they have been thoroughly tested in both the `dev` and `staging` branches. This ensures that `main` always holds stable and reliable code.
+
 ## Getting Started
 
 To get started with this project, run the development server:

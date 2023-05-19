@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
             pageDesc="Transforming your vision into a dynamic online presence."
           />
         </main>
+        <SocialMedia />
         <Footer />
       </main>
     </>

@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
-import SocialMedia from "@/components/SocialMedia";
 
 export default function Projects() {
   return (
@@ -14,7 +13,6 @@ export default function Projects() {
           pageHeader="Websites & Personal Projects"
           pageDesc="Showcasing my web development journey & creations."
         />
-        <SocialMedia />
         <Header pageHeader="Giddy Websites" />
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard

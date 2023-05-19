@@ -3,6 +3,7 @@ import Link from "next/link";
 import NavLink from "@/styles/styled-components/NavLink";
 import Svg from "@/styles/styled-components/Svg";
 import ToggleTheme from "./ToggleTheme";
+import SocialMedia from "./SocialMedia";
 
 export default function Navbar() {
   const home = "Home";
@@ -54,7 +55,7 @@ export default function Navbar() {
 
         {/* Sidebar */}
         <div
-          className={`bg-cyan-800 text-gray-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
+          className={`bg-cyan-800 text-gray-100 w-64 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:relative md:translate-x-0 transition duration-200 ease-in-out min-h-screen md:hidden`}
         >
@@ -65,6 +66,7 @@ export default function Navbar() {
             <span className="text-2xl font-extrabold">Portfolio</span>
           </Link>
           <nav>
+            <SocialMedia />
             <Link
               className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700"
               href="/"
@@ -89,6 +91,7 @@ export default function Navbar() {
             >
               {contact}
             </Link>
+
             <div className="ps-4 pt-3">
               <ToggleTheme />
             </div>
@@ -104,7 +107,7 @@ export default function Navbar() {
         >
           Allan Hillman
         </Link>
-        <nav>
+        <nav className="flex">
           <NavLink
             href="/"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"

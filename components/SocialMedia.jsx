@@ -3,13 +3,13 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function SocialMedia() {
   return (
-    <div className="container mx-auto flex justify-center pb-10">
+    <div className="container mx-auto ps-4 pb-2 flex md:justify-center">
       <a
         href="https://www.linkedin.com/in/allanhillman"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin size={34} />
+        <FaLinkedin size={26} />
       </a>
       <a
         className="ps-4"
@@ -17,7 +17,7 @@ export default function SocialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub size={34} />
+        <FaGithub size={26} />
       </a>
     </div>
   );

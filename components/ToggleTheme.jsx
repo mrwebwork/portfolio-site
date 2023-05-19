@@ -24,7 +24,7 @@ export default function ToggleTheme() {
     setIsDark(!isDark);
   };
 
-  const icon = isDark ? <FaSun /> : <FaMoon />;
+  const icon = isDark ? <FaSun size={24} /> : <FaMoon size={24} />;
 
   return (
     <button className="md:ps-5" onClick={toggleTheme}>

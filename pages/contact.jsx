@@ -13,7 +13,6 @@ export default function Contact() {
         pageDesc="Let's connect! Excited to discuss your web development needs."
       />
       <ContactForm />
-      <Footer />
     </>
   );
 }

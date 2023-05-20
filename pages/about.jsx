@@ -31,7 +31,6 @@ export default function About() {
         </FiverrLink>
         . Let's connect and transform your vision into reality.
       </Paragraph>
-      <Footer />
     </>
   );
 }

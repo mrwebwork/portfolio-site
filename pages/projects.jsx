@@ -114,7 +114,6 @@ export default function Projects() {
             href="https://frontline-optics.com/"
           />
         </section>
-        <Footer />
       </div>
     </>
   );

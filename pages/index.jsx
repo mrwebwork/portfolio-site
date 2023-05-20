@@ -14,7 +14,6 @@ export default function Home() {
             pageDesc="Transforming your vision into a dynamic online presence."
           />
         </main>
-        <Footer />
       </main>
     </>
   );

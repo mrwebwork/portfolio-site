@@ -8,7 +8,7 @@ export default function HeroSection() {
         image="/allan-hillman-picture.jpeg"
         alt="A photo of Allan Hillman"
         title="Front-End Developer"
-        description="Innovation Through Code"
+        description="Crafting the Web, One Line at a Time"
       />
     </>
   );

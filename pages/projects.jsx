@@ -36,10 +36,10 @@ export default function Projects() {
             href="https://getmegiddy.com/"
           />
         </section>
-        <Header pageHeader="React Websites" />
+        <Header pageHeader="React Projects" />
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/netflix-ai-image.png"
             text="Netflix"
             description="Text about a brand goes here"
             linkText="Watch Movies"
@@ -48,7 +48,7 @@ export default function Projects() {
             codeLink="https://github.com/mrwebwork"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/fb-messenger-ai-image.png"
             text="Messenger"
             description="Text about a brand goes here x2"
             linkText="Chat Now"
@@ -57,7 +57,7 @@ export default function Projects() {
             codeLink="https://github.com/mrwebwork"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/keeper-ai-image.png"
             text="Note Keeper"
             description="Text about a brand goes here"
             linkText="Take Notes"

@@ -14,6 +14,9 @@ module.exports = {
         md: "642px",
         "2xl": "1280px",
       },
+      borderRadius: {
+        "rounded-br-3xl": "border-bottom-right-radius: 2rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

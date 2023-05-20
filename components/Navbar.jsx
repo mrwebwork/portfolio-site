@@ -17,7 +17,7 @@ export default function Navbar() {
       {/* Mobile Navbar */}
       <div className="relative md:hidden drop-shadow-2xl z-10">
         {/* Mobile Menu Bar */}
-        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 flex justify-between">
+        <div className="bg-gradient-to-r from-indigo-500 via-sky-500 to-cyan-500 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">
             Allan Hillman
           </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Sidebar */}
         <div
-          className={`w-1/2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-100 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
+          className={`w-1/2 bg-gradient-to-bl from-indigo-500 via-sky-500 to-cyan-500 text-gray-100 rounded-br-full space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:relative md:translate-x-0 transition duration-200 ease-in-out min-h-screen md:hidden`}
         >
@@ -68,25 +68,25 @@ export default function Navbar() {
           <nav className="text-xl">
             <SocialMedia />
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
+              className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
               href="/"
             >
               {home}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
+              className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
               href="/projects"
             >
               {project}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
+              className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
               href="/about"
             >
               {about}
             </Link>
             <Link
-              className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500"
+              className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
               href="/contact"
             >
               {contact}

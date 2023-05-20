@@ -17,6 +17,7 @@ export default function Home() {
             pageHeader="Websites made simple for all businesses."
             pageDesc="Transforming your vision into a dynamic online presence."
           />
+
           {/* //* Hero Section */}
           <HeroSection />
 
@@ -41,11 +42,12 @@ export default function Home() {
 
           {/* //* Skills Section */}
           <SkillSection />
+
           {/* //* Project Webistes */}
           <Header pageHeader="React Websites" />
-          <section className="container mx-auto mb-10 lg:flex lg:flex-wrap lg:justify-center">
+          <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
             <ProjectCard
-              image="https://placehold.jp/150x150.png"
+              image="/netflix-ai-image.png"
               text="Netflix"
               description="Text about a brand goes here"
               linkText="Watch Movies"
@@ -54,7 +56,7 @@ export default function Home() {
               codeLink="https://github.com/mrwebwork"
             />
             <ProjectCard
-              image="https://placehold.jp/150x150.png"
+              image="/fb-messenger-ai-image.png"
               text="Messenger"
               description="Text about a brand goes here x2"
               linkText="Chat Now"
@@ -63,7 +65,7 @@ export default function Home() {
               codeLink="https://github.com/mrwebwork"
             />
             <ProjectCard
-              image="https://placehold.jp/150x150.png"
+              image="/keeper-ai-image.png"
               text="Note Keeper"
               description="Text about a brand goes here"
               linkText="Take Notes"

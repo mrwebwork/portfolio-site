@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
-import MySkills from "@/components/MySkills";
+import SkillsIcons from "@/components/SkillSection";
+import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             pageDesc="Transforming your vision into a dynamic online presence."
           />
           {/* //* Hero Section */}
-          {/* <HeroSection /> */}
+          <HeroSection />
 
           {/* //* About Me */}
           <div className="text-center">
@@ -39,7 +40,7 @@ export default function Home() {
           </Paragraph>
 
           {/* //* Skills Section */}
-          <MySkills />
+          <SkillSection />
           {/* //* Project Webistes */}
           <Header pageHeader="React Websites" />
           <section className="container mx-auto mb-10 lg:flex lg:flex-wrap lg:justify-center">

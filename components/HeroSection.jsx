@@ -1,7 +1,15 @@
 import React from "react";
+import ProfileSection from "./ProfileCard";
 
 export default function HeroSection() {
   return (
-    <section className="container mx-auto text-center pb-10 px-5"></section>
+    <>
+      <ProfileSection
+        image="/allan-hillman-picture.jpeg"
+        alt="A photo of Allan Hillman"
+        title="Front-End Developer"
+        description="Innovation Through Code"
+      />
+    </>
   );
 }

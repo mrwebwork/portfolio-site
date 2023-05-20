@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-export default function MySkills() {
+export default function SkillSection() {
   return (
     <>
       <div className="text-center">

@@ -48,7 +48,7 @@ export default function Projects() {
             codeLink="https://github.com/mrwebwork"
           />
           <ProjectCard
-            image="/fb-messenger-ai-image.png"
+            image="/fb-messenger-2-ai-image.png"
             text="Messenger"
             description="Text about a brand goes here x2"
             linkText="Chat Now"
@@ -69,7 +69,7 @@ export default function Projects() {
         <Header pageHeader="Shopify Webistes" />
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/montauk-ai-image.png"
             text="Montauk Group"
             description="Text about a brand goes here"
             linkText="Shop Seaside"

@@ -131,7 +131,7 @@ export default function ContactForm() {
               setFullname(e.target.value);
             }}
             name="fullname"
-            className={`bg-transparent dark:text-white border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white border-b py-2 pl-4 focus:outline-none rounded-md focus:ring-1 ${
               errors.fullname ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -153,7 +153,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none rounded-md focus:ring-1 ${
               errors.email ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -173,7 +173,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
-            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white  border-b py-2 pl-4 focus:outline-none rounded-md focus:ring-1 ${
               errors.subject ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           />
@@ -192,7 +192,7 @@ export default function ContactForm() {
             onChange={(e) => {
               setMessage(e.target.value);
             }}
-            className={`bg-transparent dark:text-white  border-b py-5 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ${
+            className={`bg-transparent dark:text-white rounded-md border-b py-5 pl-4 focus:outline-none  focus:ring-1 ${
               errors.message ? "ring-red-500" : "ring-green-500"
             } font-light text-gray-500`}
           ></textarea>

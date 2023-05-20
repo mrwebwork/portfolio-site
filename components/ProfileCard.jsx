@@ -12,7 +12,7 @@ export default function ProfileSection({ image, altText, title, description }) {
       </div>
       <div className="mx-auto md:ml-5 text-center md:text-left flex flex-col justify-center">
         <h2 className="text-3xl">{title}</h2>
-        <p>{description}</p>
+        <p className="text-lg">{description}</p>
       </div>
     </section>
   );

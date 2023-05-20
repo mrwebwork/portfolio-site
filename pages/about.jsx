@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import FiverrLink from "@/styles/styled-components/FiverrLink";
+import ProfileSection from "@/components/ProfileCard";
 
 export default function About() {
   return (
@@ -11,6 +12,10 @@ export default function About() {
       <Header
         pageHeader="Meet Allan Hillman"
         pageDesc="Crafting seamless digital experiences with code."
+      />
+      <ProfileSection
+        image="/allan-hillman-picture.jpeg"
+        alt="A photo of Allan Hillman"
       />
       <Paragraph>
         Graduating from Texas State University with a Bachelor of Business

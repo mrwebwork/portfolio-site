@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
-import SkillsIcons from "@/components/SkillSection";
 import SkillSection from "@/components/SkillSection";
 
 export default function Home() {
@@ -27,10 +26,11 @@ export default function Home() {
           </div>
           <Paragraph>
             My journey started at Shopify, where I integrated payment systems
-            and boosted site traffic by 40% through SEO strategies. Then, I dove
-            into freelancing on Fiverr, where I've delivered 40+ websites with
-            innovative UI/UX designs, securing higher conversion rates and
-            customer satisfaction.
+            and boosted site traffic by 40% through SEO strategies. I was
+            instrumental in tailoring the e-commerce experience, building custom
+            features using Liquid. Then, I dove into freelancing on Fiverr,
+            where I've delivered 40+ websites with innovative UI/UX designs,
+            securing higher conversion rates and customer satisfaction.
           </Paragraph>
           <Paragraph>
             Web development is not just my profession—it's my passion. The

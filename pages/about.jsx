@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
-import Footer from "@/components/Footer";
 import FiverrLink from "@/styles/styled-components/FiverrLink";
 
 export default function About() {

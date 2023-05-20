@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import Paragraph from "@/components/Paragraph";
-import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import MySkills from "@/components/MySkills";
 
@@ -74,11 +73,6 @@ export default function Home() {
           </section>
 
           {/* //* Reviews Section */}
-
-          {/* //* Contact Me */}
-          {/* <div className="mt-10">
-            <ContactForm />
-          </div> */}
         </main>
       </header>
     </>

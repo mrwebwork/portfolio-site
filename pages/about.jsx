@@ -13,8 +13,25 @@ export default function About() {
         pageDesc="Crafting seamless digital experiences with code."
       />
       <Paragraph>
-        I graduated from Texas State University with a Bachelor of Business
-        Administration in Computer Information Systems.
+        Graduating from Texas State University with a Bachelor of Business
+        Administration in Computer Information Systems was a pivotal point in my
+        life, but my journey into the world of technology and teamwork began
+        long before college.
+      </Paragraph>
+      <Paragraph>
+        In high school, I discovered my love for strategy and leadership as the
+        President of the Chess Club. Harnessing the power of careful planning
+        and foresight refined my decision-making skills, something I later
+        applied to my web development career. This curiosity about intricate
+        systems also led me to establish the Cryptocurrency Club, where I
+        navigated the complex world of digital currencies with my peers.
+      </Paragraph>
+      <Paragraph>
+        Sports have also been a crucial part of my life, from basketball and
+        football to track and field. As an athlete, I learned the essence of
+        teamwork and the significance of representing something larger than
+        oneself. The camaraderie and competition nurtured my resilience and
+        collaborative spirit—traits I bring to every project I undertake today.
       </Paragraph>
       <Paragraph>
         As a Front-End Developer, I bring ideas to life in the digital world.
@@ -33,6 +50,12 @@ export default function About() {
           Fiverr
         </FiverrLink>
         . Let's connect and transform your vision into a reality.
+      </Paragraph>
+      <Paragraph>
+        Outside of the digital world, you'll often find me running along the
+        trails of Austin, paddleboarding on the river, or going for reflective
+        walks. I believe in maintaining a healthy balance between personal
+        growth and professional development.
       </Paragraph>
     </>
   );

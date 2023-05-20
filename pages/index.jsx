@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/SkillSection";
+import Testimonals from "@/components/Testimonals";
 
 export default function Home() {
   return (
@@ -43,8 +44,11 @@ export default function Home() {
           {/* //* Skills Section */}
           <SkillSection />
 
+          {/* //* Reviews Section */}
+          <Testimonals />
+
           {/* //* Project Webistes */}
-          <Header pageHeader="React Websites" />
+          <Header pageHeader="React Projects" />
           <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
             <ProjectCard
               image="/netflix-ai-image.png"
@@ -74,8 +78,6 @@ export default function Home() {
               codeLink="https://github.com/mrwebwork"
             />
           </section>
-
-          {/* //* Reviews Section */}
         </main>
       </header>
     </>

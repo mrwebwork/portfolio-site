@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
-import ProjectCard from "@/components/ProjectCard";
 import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/SkillSection";
-import Testimonals from "@/components/Testimonals";
 
 export default function Home() {
   return (
@@ -43,41 +41,6 @@ export default function Home() {
 
           {/* //* Skills Section */}
           <SkillSection />
-
-          {/* //* Reviews Section */}
-          <Testimonals />
-
-          {/* //* Project Webistes */}
-          <Header pageHeader="React Projects" />
-          <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
-            <ProjectCard
-              image="/netflix-ai-image.png"
-              text="Netflix"
-              description="Text about a brand goes here"
-              linkText="Watch Movies"
-              href="#"
-              showCodeLink
-              codeLink="https://github.com/mrwebwork"
-            />
-            <ProjectCard
-              image="/fb-messenger-ai-image.png"
-              text="Messenger"
-              description="Text about a brand goes here x2"
-              linkText="Chat Now"
-              href="#"
-              showCodeLink
-              codeLink="https://github.com/mrwebwork"
-            />
-            <ProjectCard
-              image="/keeper-ai-image.png"
-              text="Note Keeper"
-              description="Text about a brand goes here"
-              linkText="Take Notes"
-              href="#"
-              showCodeLink
-              codeLink="https://github.com/mrwebwork"
-            />
-          </section>
         </main>
       </header>
     </>

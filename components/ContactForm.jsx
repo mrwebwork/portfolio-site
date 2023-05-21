@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
+//* This component maintains state for form fields, error messages, validation errors, success/failure messages, and the button text.
 export default function ContactForm() {
-  //* States for contact form fields
+  //* Initialize state variables for each form field with empty strings.
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -57,7 +58,6 @@ export default function ContactForm() {
   };
 
   //* Handling form submit
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     let isValidForm = handleValidation();

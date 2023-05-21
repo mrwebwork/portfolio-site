@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileSection from "./ProfileCard";
+import ProfileSection from "./ProfileSection";
 
 export default function HeroSection() {
   return (

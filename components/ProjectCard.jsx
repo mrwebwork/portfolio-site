@@ -1,6 +1,9 @@
+//* Importing required modules
 import React from "react";
 
+//* The ProjectCard component is responsible for rendering a single project card, including an image, description and related links.
 export default function ProjectCard({
+  //* Props destructuring to extract required properties
   image,
   text,
   description,
@@ -11,6 +14,7 @@ export default function ProjectCard({
   codeLinkText = "View Code",
 }) {
   return (
+    // * The 'article' tag is used to represent a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
     <article className="project-card mb-5 py-10 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-2xl space-y-2 sm:space-y-0 flex flex-col items-center text-center">
       <img
         src={image}

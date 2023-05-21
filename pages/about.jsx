@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import FiverrLink from "@/styles/styled-components/FiverrLink";
-import ProfileSection from "@/components/ProfileCard";
+import ProfileSection from "@/components/ProfileSection";
 
 export default function About() {
   return (

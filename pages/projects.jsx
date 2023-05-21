@@ -15,21 +15,21 @@ export default function Projects() {
         <Header pageHeader="Giddy Websites" />
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/eddie-ai-image.png"
             text="Eddie by Giddy"
             description="Text about a brand goes here"
             linkText="Buy Eddie"
             href="https://eddiebygiddy.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/giddy-health-2-ai-image.png"
             text="Giddy Health"
             description="Text about a brand goes here x2"
             linkText="Shop Vitamins"
             href="https://giddyhealth.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/giddy-ai-image.png"
             text="Giddy"
             description="Text about a brand goes here"
             linkText="Read Articles"
@@ -42,28 +42,22 @@ export default function Projects() {
             image="/netflix-ai-image.png"
             text="Netflix"
             description="Text about a brand goes here"
-            linkText="Watch Movies"
-            href="#"
-            showCodeLink
-            codeLink="https://github.com/mrwebwork"
+            linkText="View Github"
+            href="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="/fb-messenger-2-ai-image.png"
             text="Messenger"
             description="Text about a brand goes here x2"
-            linkText="Chat Now"
-            href="#"
-            showCodeLink
-            codeLink="https://github.com/mrwebwork"
+            linkText="View Github"
+            href="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="/keeper-ai-image.png"
             text="Note Keeper"
             description="Text about a brand goes here"
-            linkText="Take Notes"
-            href="#"
-            showCodeLink
-            codeLink="https://github.com/mrwebwork"
+            linkText="View Github"
+            href="https://github.com/mrwebwork"
           />
         </section>
         <Header pageHeader="Shopify Webistes" />
@@ -76,14 +70,14 @@ export default function Projects() {
             href="https://shopthemontaukgroup.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/yas-cycles-ai-image.png"
             text="Yas Mena Cycles"
             description="Text about a brand goes here x2"
             linkText="Shop Bikes"
             href="https://yascycles.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/together-bev-ai-image.png"
             text="Together Beverages"
             description="Text about a brand goes here"
             linkText="Shop Drinks"
@@ -92,21 +86,21 @@ export default function Projects() {
         </section>
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/anime-ai-image.png"
             text="Zenshin Labs"
             description="Text about a brand goes here"
             linkText="Shop Anime"
             href="https://zenshinlabs.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/tonem-ai-image.png"
             text="TŌNEM"
             description="Text about a brand goes here x2"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />
           <ProjectCard
-            image="https://placehold.jp/150x150.png"
+            image="/front-line-2-ai-image.png"
             text="Frontline Optics"
             description="Text about a brand goes here"
             linkText="Shop Shades"

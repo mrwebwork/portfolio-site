@@ -1,7 +1,10 @@
+//* Importing required modules and components
 import React from "react";
 
+//* The ProfileSection component is responsible for rendering a profile image and related information such as a title and a description.
 export default function ProfileSection({ image, altText, title, description }) {
   return (
+    //* The component returns a section element with two main parts: image section and text section.
     <section className="container mx-auto flex flex-col md:flex-row pb-10 px-5">
       <div className="mx-auto md:mr-5 mb-5 md:mb-0">
         <img

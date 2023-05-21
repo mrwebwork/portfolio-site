@@ -6,9 +6,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        md: "642px",
+        "2xl": "1280px",
+      },
+      borderRadius: {
+        "rounded-br-3xl": "border-bottom-right-radius: 2rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

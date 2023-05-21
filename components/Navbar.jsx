@@ -11,6 +11,12 @@ export default function Navbar() {
   const about = "About";
   const contact = "Contact";
   const [isOpen, setIsOpen] = useState(false);
+  const [svgClicked, setSvgClicked] = useState(false);
+
+  const handleSvgClick = () => {
+    setIsOpen(!isOpen);
+    setSvgClicked(true);
+  };
 
   return (
     <>
@@ -29,8 +35,8 @@ export default function Navbar() {
               height="50"
               viewBox="0 0 32 42"
               xmlns="http://www.w3.org/2000/svg"
-              onClick={() => setIsOpen(!isOpen)}
-              className={isOpen ? "active" : ""}
+              onClick={handleSvgClick}
+              className={isOpen && svgClicked ? "active" : ""}
             >
               <g transform="matrix(1,0,0,1,-389.5,-264.004)">
                 <g id="arrow_left2">

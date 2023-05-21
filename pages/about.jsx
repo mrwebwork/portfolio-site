@@ -46,7 +46,7 @@ export default function About() {
         Collaborating seamlessly with back-end developers, my aim is to create
         dynamic and responsive websites. My passion fuels my continuous
         learning, helping me to deliver top-notch results, on time. Always
-        excited for new challenges, I offer my services globally via{" "}
+        excited for new challenges, I offer my services globally via &nbsp;
         <FiverrLink
           href="https://www.fiverr.com/allanhillman"
           target="_blank"
@@ -54,13 +54,13 @@ export default function About() {
         >
           Fiverr
         </FiverrLink>
-        . Let's connect and transform your vision into a reality.
+        . Let&apos;s connect and transform your vision into a reality.
       </Paragraph>
       <Paragraph>
-        Outside of the digital world, you'll often find me running along the
-        trails of Austin, paddleboarding on the river, or going for reflective
-        walks. I believe in maintaining a healthy balance between personal
-        growth and professional development.
+        Outside of the digital world, you&apos;ll often find me running along
+        the trails of Austin, paddleboarding on the river, or going for
+        reflective walks. I believe in maintaining a healthy balance between
+        personal growth and professional development.
       </Paragraph>
     </>
   );

@@ -29,11 +29,11 @@ export default function Home() {
             and boosted site traffic by 40% through SEO strategies. I was
             instrumental in tailoring the e-commerce experience, building custom
             features using Liquid. Then, I dove into freelancing on Fiverr,
-            where I've delivered 40+ websites with innovative UI/UX designs,
-            securing higher conversion rates and customer satisfaction.
+            where I&apos;ve delivered 40+ websites with innovative UI/UX
+            designs, securing higher conversion rates and customer satisfaction.
           </Paragraph>
           <Paragraph>
-            Web development is not just my profession—it's my passion. The
+            Web development is not just my profession—it&apos;s my passion. The
             thrill of learning new technologies, coupled with my ability to
             collaborate effectively, fuels my drive to create dynamic,
             user-friendly web experiences.

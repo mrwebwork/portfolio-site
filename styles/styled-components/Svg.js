@@ -23,7 +23,6 @@ const Svg = styled.svg`
 
   &.active #top,
   &.active #bottom {
-    /* stroke-dasharray: 75.39; */
     stroke-dashoffset: -60;
   }
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ContactForm from "@/components/ContactForm";

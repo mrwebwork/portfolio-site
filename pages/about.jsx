@@ -67,7 +67,7 @@ export default function About() {
         Collaborating seamlessly with back-end developers, my aim is to create
         dynamic and responsive websites. My passion fuels my continuous
         learning, helping me to deliver top-notch results, on time. Always
-        excited for new challenges, I offer my services globally via &nbsp;
+        excited for new challenges, I offer my services globally via&nbsp;
         <FiverrLink
           href="https://www.fiverr.com/allanhillman"
           target="_blank"

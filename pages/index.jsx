@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
@@ -8,6 +9,14 @@ import SkillSection from "@/components/SkillSection";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Allan Hillman Portfolio Website</title>
+        <meta
+          name="description"
+          content="Allan Hillman's portfolio showcasing web development skills, experience, and projects."
+          key="desc"
+        />
+      </Head>
       <header className="container mx-auto text-white dark:text-black bg-black dark:bg-white flex flex-col">
         <Navbar />
         <main className="flex-grow flex flex-col">
@@ -21,9 +30,9 @@ export default function Home() {
           <HeroSection />
 
           {/* //* About Me */}
-          <div className="text-center">
+          <section className="text-center">
             <h1 className="text-5xl py-5">My Story</h1>
-          </div>
+          </section>
           <Paragraph>
             My journey started at Shopify, where I integrated payment systems
             and boosted site traffic by 40% through SEO strategies. I was

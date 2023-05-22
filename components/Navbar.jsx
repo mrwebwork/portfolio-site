@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="relative md:hidden drop-shadow-2xl z-10">
+      <div className="relative md:hidden drop-shadow-xl z-10">
         {/* Mobile Menu Bar */}
         <div className="bg-gradient-to-r from-indigo-500 via-sky-500 to-cyan-500 text-gray-100 flex justify-between">
           <Link href="/" className="block p-5 text-white font-bold text-2xl">

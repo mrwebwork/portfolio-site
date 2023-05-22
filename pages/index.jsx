@@ -10,13 +10,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Allan Hillman Portfolio Website</title>
+        <title>Allan Hillman - Web Developer & Designer | Home</title>
         <meta
           name="description"
-          content="Allan Hillman's portfolio showcasing web development skills, experience, and projects."
-          key="desc"
+          content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Allan Hillman - Web Developer & Designer | Home"
+        />
+        <meta
+          property="og:description"
+          content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."
+        />
+        <meta property="og:url" content="https://allanhillman.com" />
       </Head>
+
       <header className="container mx-auto text-white dark:text-black bg-black dark:bg-white flex flex-col">
         <Navbar />
         <main className="flex-grow flex flex-col">

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
@@ -8,6 +9,26 @@ import ProfileSection from "@/components/ProfileSection";
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About Allan Hillman - Web Developer & Designer</title>
+        <meta
+          name="description"
+          content="Learn more about Allan Hillman, a passionate web developer & designer, and his journey in the world of technology."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="About Allan Hillman - Web Developer & Designer"
+        />
+        <meta
+          property="og:description"
+          content="Learn more about Allan Hillman, a passionate web developer & designer, and his journey in the world of technology."
+        />
+        <meta property="og:url" content="https://allanhillman.com" />
+      </Head>
+
       <Navbar />
       <Header
         pageHeader="Meet Allan Hillman"
@@ -46,7 +67,7 @@ export default function About() {
         Collaborating seamlessly with back-end developers, my aim is to create
         dynamic and responsive websites. My passion fuels my continuous
         learning, helping me to deliver top-notch results, on time. Always
-        excited for new challenges, I offer my services globally via &nbsp;
+        excited for new challenges, I offer my services globally via&nbsp;
         <FiverrLink
           href="https://www.fiverr.com/allanhillman"
           target="_blank"

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
@@ -6,6 +7,26 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Projects() {
   return (
     <>
+      <Head>
+        <title>Allan Hillman - My Projects | Web Developer & Designer</title>
+        <meta
+          name="description"
+          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Allan Hillman - My Projects | Web Developer & Designer"
+        />
+        <meta
+          property="og:description"
+          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
+        />
+        <meta property="og:url" content="https://allanhillman.com" />
+      </Head>
+
       <div className="container mx-auto">
         <Navbar />
         <Header

@@ -9,6 +9,8 @@ This portfolio website, built with Next.js and React, showcases my front-end dev
 - **Styling:** Tailwind CSS and CSS Modules are used for component-level styles, resulting in a clean and organized codebase.
 - **Static files:** Static files, like images, are served from the `public` directory.
 - **Deployment:** The site is hosted on GitHub Pages, demonstrating knowledge of version control and continuous deployment practices.
+  **Toggle Theme Component:** A versatile UI feature is demonstrated through, the `Toggle Theme`, which provides an engaging and accessible user interface. This component enables seamless transitioning between dark and light themes, catering to diverse user preferences and promoting an inclusive digital experience. This demonstrates an understanding of user-centered design and adherence to the principles of universal design.
+- **Contact Form Integration with SendGrid:** Incorporating SendGrid's powerful transactional email services, the website's contact form enables users to send messages directly through the site interface. This seamless integration showcases the adept use of third-party APIs to enhance website functionality and user interaction, promoting active engagement.
 
 ## Branching Strategy
 

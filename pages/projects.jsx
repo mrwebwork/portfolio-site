@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
@@ -6,6 +7,26 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Projects() {
   return (
     <>
+      <Head>
+        <title>Allan Hillman - My Projects | Web Developer & Designer</title>
+        <meta
+          name="description"
+          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Allan Hillman - My Projects | Web Developer & Designer"
+        />
+        <meta
+          property="og:description"
+          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
+        />
+        <meta property="og:url" content="https://allanhillman.com" />
+      </Head>
+
       <div className="container mx-auto">
         <Navbar />
         <Header
@@ -17,21 +38,21 @@ export default function Projects() {
           <ProjectCard
             image="/eddie-ai-image.png"
             text="Eddie by Giddy"
-            description="Text about a brand goes here"
+            description="ED Medical Device for Health"
             linkText="Buy Eddie"
             href="https://eddiebygiddy.com/"
           />
           <ProjectCard
             image="/giddy-health-2-ai-image.png"
             text="Giddy Health"
-            description="Text about a brand goes here x2"
+            description="Plant Capsules & Slow Release"
             linkText="Shop Vitamins"
             href="https://giddyhealth.com/"
           />
           <ProjectCard
             image="/giddy-ai-image.png"
             text="Giddy"
-            description="Text about a brand goes here"
+            description="Top Largest Sexual Health Firm"
             linkText="Read Articles"
             href="https://getmegiddy.com/"
           />
@@ -41,21 +62,21 @@ export default function Projects() {
           <ProjectCard
             image="/netflix-ai-image.png"
             text="Netflix"
-            description="Text about a brand goes here"
+            description="Next.js & React Netflix Clone App"
             linkText="View Github"
             href="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="/fb-messenger-2-ai-image.png"
             text="Messenger"
-            description="Text about a brand goes here x2"
+            description="Dynamic FB Messenger Clone App"
             linkText="View Github"
             href="https://github.com/mrwebwork"
           />
           <ProjectCard
             image="/keeper-ai-image.png"
             text="Note Keeper"
-            description="Text about a brand goes here"
+            description="Interactive Google Keeper Clone"
             linkText="View Github"
             href="https://github.com/mrwebwork"
           />
@@ -65,21 +86,21 @@ export default function Projects() {
           <ProjectCard
             image="/montauk-ai-image.png"
             text="Montauk Group"
-            description="Text about a brand goes here"
+            description="Premium Beachy Lifestyle Attire"
             linkText="Shop Seaside"
             href="https://shopthemontaukgroup.com/"
           />
           <ProjectCard
             image="/yas-cycles-ai-image.png"
             text="Yas Mena Cycles"
-            description="Text about a brand goes here x2"
+            description="Expert Bicycle Shop & Services"
             linkText="Shop Bikes"
             href="https://yascycles.com/"
           />
           <ProjectCard
             image="/together-bev-ai-image.png"
             text="Together Beverages"
-            description="Text about a brand goes here"
+            description="Beverages Bonding Communities"
             linkText="Shop Drinks"
             href="https://togetherbeverages.com/"
           />
@@ -88,21 +109,21 @@ export default function Projects() {
           <ProjectCard
             image="/anime-ai-image.png"
             text="Zenshin Labs"
-            description="Text about a brand goes here"
+            description="Streetwear Meets Anime Soul"
             linkText="Shop Anime"
             href="https://zenshinlabs.com/"
           />
           <ProjectCard
             image="/tonem-ai-image.png"
             text="TŌNEM"
-            description="Text about a brand goes here x2"
+            description="Serenity in Sonic Vibrations"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />
           <ProjectCard
             image="/front-line-2-ai-image.png"
             text="Frontline Optics"
-            description="Text about a brand goes here"
+            description="Eyewear for Everyday Heroes"
             linkText="Shop Shades"
             href="https://frontline-optics.com/"
           />

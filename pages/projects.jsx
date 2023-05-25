@@ -33,7 +33,6 @@ export default function Projects() {
           pageHeader="Websites & Personal Projects"
           pageDesc="Showcasing my web development journey & creations."
         />
-
         <Header pageHeader="Shopify Webistes" />
         <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
           <ProjectCard

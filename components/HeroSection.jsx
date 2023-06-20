@@ -7,7 +7,7 @@ export default function HeroSection() {
       <ProfileSection
         image="/allan-hillman-picture.jpeg"
         alt="A photo of Allan Hillman"
-        title="Front-End Developer"
+        title="Software Engineer"
         description="Crafting the Web, One Line at a Time"
       />
     </>

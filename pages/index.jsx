@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Allan Hillman - Web Developer & Designer | Home</title>
+        <title>Allan Hillman - Software Engineer | Home</title>
         <meta
           name="description"
           content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."
@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Allan Hillman - Web Developer & Designer | Home"
+          content="Allan Hillman - Software Engineer | Home"
         />
         <meta
           property="og:description"

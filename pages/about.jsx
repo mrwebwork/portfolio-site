@@ -10,21 +10,21 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Allan Hillman - Web Developer & Designer</title>
+        <title>About Allan Hillman - Software Engineer</title>
         <meta
           name="description"
-          content="Learn more about Allan Hillman, a passionate web developer & designer, and his journey in the world of technology."
+          content="Learn more about Allan Hillman, a passionate software engineer, and his journey in the world of technology."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="About Allan Hillman - Web Developer & Designer"
+          content="About Allan Hillman - Software Engineer"
         />
         <meta
           property="og:description"
-          content="Learn more about Allan Hillman, a passionate web developer & designer, and his journey in the world of technology."
+          content="Learn more about Allan Hillman, a passionate software engineer, and his journey in the world of technology."
         />
         <meta property="og:url" content="https://allanhillman.com" />
       </Head>
@@ -60,8 +60,8 @@ export default function About() {
         collaborative spirit—traits I bring to every project I undertake today.
       </Paragraph>
       <Paragraph>
-        As a Front-End Developer, I bring ideas to life in the digital world.
-        With a rich experience in platforms like Shopify and WordPress, and
+        As a Software Engineer, I bring ideas to life in the digital world. With
+        a rich experience in platforms like Shopify and WordPress, and
         proficiency in HTML5, CSS3, SASS, JavaScript, React.js, and Next.js. I
         craft user-friendly interfaces for an exceptional online experience.
         Collaborating seamlessly with back-end developers, my aim is to create

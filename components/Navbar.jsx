@@ -10,6 +10,7 @@ export default function Navbar() {
   const project = "Projects";
   const about = "About";
   const contact = "Contact";
+  const resume = "Resume";
   const [isOpen, setIsOpen] = useState(false);
   const [svgClicked, setSvgClicked] = useState(false);
 
@@ -97,6 +98,14 @@ export default function Navbar() {
             >
               {contact}
             </Link>
+            <Link
+              className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
+              href="https://allan-hillman-resume.tiiny.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {resume}
+            </Link>
 
             <div className="ps-4 pt-3">
               <ToggleTheme />
@@ -137,6 +146,14 @@ export default function Navbar() {
             className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"
           >
             {contact}
+          </NavLink>
+          <NavLink
+            href="https://allan-hillman-resume.tiiny.site/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))] ms-4"
+          >
+            {resume}
           </NavLink>
           <SocialMedia />
           <ToggleTheme />

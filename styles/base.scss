@@ -22,12 +22,12 @@ $font-montserrat-extra-bold: 'Montserrat-ExtraBold', sans-serif;
 $font-montserrat-italic: 'Montserrat-Italic', sans-serif;
 
 h1 {
-    font-family: $font-montserrat-regular;
+    font-family: $font-montserrat;
     font-weight: 400;
 }
 
 h2 {
-    font-family: $font-montserrat-medium;
+    font-family: $font-montserrat;
     font-weight: 400;
 }
 
@@ -37,7 +37,7 @@ p, a {
 }
 
 .footer-text {
-    font-family: $font-montserrat-light;
+    font-family: $font-montserrat;
     font-weight: 100;
 }
 

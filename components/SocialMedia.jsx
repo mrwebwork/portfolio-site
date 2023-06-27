@@ -8,6 +8,7 @@ export default function SocialMedia() {
     //* The component returns a div container with LinkedIn and GitHub icons as child components.
     <div className="container mx-auto ps-4 pb-2 md:pb-0 flex md:justify-center">
       <a
+        aria-label="Link to Allan Hillman LinkedIn Page"
         href="https://www.linkedin.com/in/allanhillman"
         target="_blank"
         rel="noopener noreferrer"
@@ -16,6 +17,7 @@ export default function SocialMedia() {
       </a>
 
       <a
+        aria-label="Link to Allan Hillman GitHub Page"
         className="ps-4"
         href="https://github.com/mrwebwork"
         target="_blank"

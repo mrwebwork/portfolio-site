@@ -1,9 +1,16 @@
 //* Importing required modules and components
 import React from "react";
+
 import Image from "next/image";
 
 //* The ProfileSection component is responsible for rendering a profile image and related information such as a title and a description.
-export default function ProfileSection({ image, altText, title, description }) {
+export default function ProfileSection({
+  image,
+  altText,
+  ariaLabel,
+  title,
+  description,
+}) {
   return (
     //* The component returns a section element with two main parts: image section and text section.
     <section className="container mx-auto flex flex-col md:flex-row pb-10 px-5">
@@ -12,7 +19,7 @@ export default function ProfileSection({ image, altText, title, description }) {
           className="rounded-tr-3xl rounded-bl-3xl"
           src={image}
           alt={altText}
-          aria-label={altText}
+          ariaLabel={altText}
           width={200}
           height={200}
         />

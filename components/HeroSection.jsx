@@ -6,8 +6,8 @@ export default function HeroSection() {
     <>
       <ProfileSection
         image="/allan-hillman-picture.jpeg"
-        alt="A photo of Allan Hillman"
-        aria-label="Photo of Allan Hillman"
+        altText="A photo of Allan Hillman"
+        ariaLabel="An image of the web developer Allan Hillman"
         title="Software Engineer"
         description="Crafting the Web, One Line at a Time"
       />

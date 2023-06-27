@@ -31,19 +31,20 @@ export default function Projects() {
 
       <div className="projects-container mx-auto">
         <Navbar />
-        <Header
+        {/* <Header
           pageHeader="Websites & Personal Projects"
-          pageDesc="Showcasing my web development journey & creations."
-        />
+          pageDesc="Showcasing my web development journey & creations"
+        /> */}
         <Header
           pageHeader="From Concept to Code: My Web Creations"
           pageDesc="Where Creativity Meets Functionality"
         />
+        {/* //* Personal Projects */}
         <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
           <ProjectCard
             image="/tic-tac-toe.png"
             text="Tic Tac Toe"
-            description="Built with HTML, CSS, and JS. Deployed on GitHub pages."
+            description="An interactive game crafted with HTML, CSS, and JS, hosted via GitHub pages"
             linkText="Play Now"
             href="https://mrwebwork.github.io/tic-tac-toe/"
             showCodeLink={true}
@@ -52,7 +53,7 @@ export default function Projects() {
           <ProjectCard
             image="/spotify.png"
             text="Spotify Clone"
-            description="Using Next.js, React.js, TypeScript, Tailwind.css and Supabase"
+            description="A dynamic clone leveraging Next.js, React.js, TypeScript, Tailwind, and Supabase"
             linkText="In Progress"
             href="https://github.com/mrwebwork/spotify"
             showCodeLink={true}
@@ -63,25 +64,26 @@ export default function Projects() {
           pageHeader="Bridging Ambitions with Technology"
           pageDesc="Web Solutions for Global Clients"
         />
+        {/* //* Client Websites */}
         <section className="projects-section container mx-auto">
           <ProjectCard
             image="/montauk-ai-image.png"
             text="Montauk Group"
-            description="Premium Beachy Lifestyle Attire"
+            description="Custom 'Shop' pages engineered using Liquid, SCSS, HTML, and JS"
             linkText="Shop Seaside"
-            href="https://shopthemontaukgroup.com/"
+            href="https://shopthemontaukgroup.com/pages/shop-womens"
           />
           <ProjectCard
             image="/yas-cycles-ai-image.png"
             text="Yas Mena Cycles"
-            description="Expert Bicycle Shop & Services"
+            description="Entire store front developed leveraging Shopify 2.0 features"
             linkText="Shop Bikes"
             href="https://yascycles.com/"
           />
           <ProjectCard
             image="/together-bev-ai-image.png"
             text="Together Beverages"
-            description="Beverages Bonding Communities"
+            description="Crafted a digital store from scratch, incorporated with a seamless POD app"
             linkText="Shop Drinks"
             href="https://togetherbeverages.com/"
           />
@@ -90,21 +92,21 @@ export default function Projects() {
           <ProjectCard
             image="/anime-ai-image.png"
             text="Zenshin Labs"
-            description="Streetwear Meets Anime Soul"
+            description="Designed several landing templates, and executed end-to-end store development"
             linkText="Shop Anime"
             href="https://zenshinlabs.com/"
           />
           <ProjectCard
             image="/tonem-ai-image.png"
             text="TŌNEM"
-            description="Where Serenity in Sonic Vibrations"
+            description="Developed a dropshipping store, crafted landing pages, and established store tracking"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />
           <ProjectCard
             image="/front-line-2-ai-image.png"
             text="Frontline Optics"
-            description="Eyewear for Everyday Heroes"
+            description="Constructed custom landing pages using Liquid sections and established email automation"
             linkText="Shop Shades"
             href="https://frontline-optics.com/"
           />

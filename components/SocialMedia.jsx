@@ -1,6 +1,10 @@
-//* Importing required modules and components
 import React from "react";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+
+import { TbBrandFiverr } from "react-icons/tb";
+
+import { SiFiverr } from "react-icons/si";
 
 //* The SocialMedia component is responsible for rendering social media icons with the corresponding links.
 export default function SocialMedia() {
@@ -24,6 +28,15 @@ export default function SocialMedia() {
         rel="noopener noreferrer"
       >
         <FaGithub size={26} />
+      </a>
+      <a
+        aria-label="Link to Allan Hillman Fiverr Freelance Page"
+        className="ps-4"
+        href="https://www.fiverr.com/allanhillman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <TbBrandFiverr size={26} />
       </a>
     </div>
   );

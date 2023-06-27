@@ -4,8 +4,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { TbBrandFiverr } from "react-icons/tb";
 
-import { SiFiverr } from "react-icons/si";
-
 //* The SocialMedia component is responsible for rendering social media icons with the corresponding links.
 export default function SocialMedia() {
   return (

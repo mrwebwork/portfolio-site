@@ -16,7 +16,7 @@ export default function About() {
           content="Learn more about Allan Hillman, a passionate software engineer, and his journey in the world of technology."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"

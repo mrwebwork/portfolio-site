@@ -18,7 +18,7 @@ export default function Home() {
           content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"

@@ -41,18 +41,20 @@ export default function Projects() {
         />
         <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
           <ProjectCard
-            image="/montauk-ai-image.png"
+            image="/tic-tac-toe.png"
             text="Tic Tac Toe"
             description="Built with HTML, CSS, and JS. Deployed on GitHub pages."
             linkText="Play Now"
             href="https://mrwebwork.github.io/tic-tac-toe/"
+            showCodeLink={true}
+            codeLink={"https://github.com/mrwebwork/tic-tac-toe"}
           />
           <ProjectCard
-            image="/montauk-ai-image.png"
+            image="/spotify.png"
             text="Spotify Clone"
             description="Using Next.js, React.js, TypeScript, Tailwind.css and Supabase"
             linkText="In Progress"
-            href="https://mrwebwork.github.io/tic-tac-toe/"
+            href="https://github.com/mrwebwork/spotify"
             showCodeLink={true}
             codeLink={"https://github.com/mrwebwork/spotify"}
           />

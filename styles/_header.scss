@@ -1,0 +1,12 @@
+
+//* Usage of Mixin
+@include media($breakpoint_sm) {
+    .display-name {
+        display: none;
+    }
+}   
+// @include media($breakpoint_2xl){
+//     .display-name {
+//         display: block;
+//     }
+// }     

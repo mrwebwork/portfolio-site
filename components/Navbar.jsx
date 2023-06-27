@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
 import Link from "next/link";
+
 import NavLink from "@/styles/styled-components/NavLink";
 import Svg from "@/styles/styled-components/Svg";
+
 import ToggleTheme from "./ToggleTheme";
 import SocialMedia from "./SocialMedia";
 
@@ -11,6 +14,8 @@ export default function Navbar() {
   const about = "About";
   const contact = "Contact";
   const resume = "Resume";
+  const fullName = "Allan Hillman";
+
   const [isOpen, setIsOpen] = useState(false);
   const [svgClicked, setSvgClicked] = useState(false);
 
@@ -25,8 +30,8 @@ export default function Navbar() {
       <div className="sticky top-0 md:hidden drop-shadow-lg z-10 ">
         {/* Mobile Menu Bar */}
         <div className="bg-gradient-to-r from-indigo-500 via-sky-500 to-cyan-500 text-gray-100 flex justify-between">
-          <Link href="/" className="block p-5 text-white font-bold text-2xl">
-            Allan Hillman
+          <Link href="/" className="block p-5 text-white text-2xl">
+            {fullName}
           </Link>
 
           {/* Navigation Button */}
@@ -100,7 +105,7 @@ export default function Navbar() {
             </Link>
             <Link
               className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
-              href="https://allan-hillman-resume.tiiny.site/"
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5d34d67a-bcd2-4d6b-b6ba-636963a05d10"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,12 +120,12 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navbar */}
-      <div className="hidden container mx-auto md:flex p-5 justify-around items-center h-full text-[rgb(var(--foreground-rgb))]">
+      <div className="hidden container mx-auto md:flex py-10 md:justify-around items-center h-full text-[rgb(var(--foreground-rgb))]">
         <Link
           href="/"
-          className="font-bold text-2xl text-[rgb(var(--foreground-rgb))]"
+          className="display-name text-2xl text-[rgb(var(--foreground-rgb))]"
         >
-          Allan Hillman
+          {fullName}
         </Link>
         <nav className="flex items-center text-xl">
           <NavLink
@@ -148,7 +153,7 @@ export default function Navbar() {
             {contact}
           </NavLink>
           <NavLink
-            href="https://allan-hillman-resume.tiiny.site/"
+            href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5d34d67a-bcd2-4d6b-b6ba-636963a05d10"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))] ms-4"

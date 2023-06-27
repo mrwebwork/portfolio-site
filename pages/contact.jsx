@@ -30,7 +30,7 @@ export default function Contact() {
       <Navbar />
       <Header
         pageHeader="Contact Me"
-        pageDesc="Let's connect! Excited to discuss your web development needs."
+        pageDesc="Let's connect! Excited to discuss your web development needs"
       />
       <ContactForm />
     </>

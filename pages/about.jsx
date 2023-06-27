@@ -32,7 +32,7 @@ export default function About() {
       <Navbar />
       <Header
         pageHeader="Meet Allan Hillman"
-        pageDesc="Crafting seamless digital experiences with code."
+        pageDesc="From Coding Enthusiast to Industry Expert: Discover My Journey in the Tech Realm"
       />
       <ProfileSection
         image="/allan-hillman-picture.jpeg"

@@ -1,5 +1,7 @@
 import React from "react";
+
 import Head from "next/head";
+
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
@@ -34,8 +36,8 @@ export default function Home() {
         <main className="flex-grow flex flex-col">
           {/* //* Heading for Home Page */}
           <Header
-            pageHeader="Websites made simple for all businesses."
-            pageDesc="Transforming your vision into a dynamic online presence."
+            pageHeader="Welcome to Allan Hillman's Digital Domain"
+            pageDesc="Crafting Seamless, Engaging, and High-impact Digital Experiences"
           />
 
           {/* //* Hero Section */}

@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <>
       <footer className="container mx-auto text-center py-10">
-        <p>© Copyright {currentYear} ® | All Rights Reserved.</p>
+        <p className="footer-text">
+          © Copyright {currentYear} ® | All Rights Reserved.
+        </p>
       </footer>
     </>
   );

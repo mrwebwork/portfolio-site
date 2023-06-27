@@ -1,5 +1,7 @@
 import React from "react";
+
 import Head from "next/head";
+
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
@@ -27,14 +29,39 @@ export default function Projects() {
         <meta property="og:url" content="https://allanhillman.com" />
       </Head>
 
-      <div className="container mx-auto">
+      <div className="projects-container mx-auto">
         <Navbar />
         <Header
           pageHeader="Websites & Personal Projects"
           pageDesc="Showcasing my web development journey & creations."
         />
-        <Header pageHeader="Shopify Webistes" />
-        <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
+        <Header
+          pageHeader="From Concept to Code: My Web Creations"
+          pageDesc="Where Creativity Meets Functionality"
+        />
+        <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
+          <ProjectCard
+            image="/montauk-ai-image.png"
+            text="Tic Tac Toe"
+            description="Built with HTML, CSS, and JS. Deployed on GitHub pages."
+            linkText="Play Now"
+            href="https://mrwebwork.github.io/tic-tac-toe/"
+          />
+          <ProjectCard
+            image="/montauk-ai-image.png"
+            text="Spotify Clone"
+            description="Using Next.js, React.js, TypeScript, Tailwind.css and Supabase"
+            linkText="In Progress"
+            href="https://mrwebwork.github.io/tic-tac-toe/"
+            showCodeLink={true}
+            codeLink={"https://github.com/mrwebwork/spotify"}
+          />
+        </section>
+        <Header
+          pageHeader="Bridging Ambitions with Technology"
+          pageDesc="Web Solutions for Global Clients"
+        />
+        <section className="projects-section container mx-auto">
           <ProjectCard
             image="/montauk-ai-image.png"
             text="Montauk Group"
@@ -57,7 +84,7 @@ export default function Projects() {
             href="https://togetherbeverages.com/"
           />
         </section>
-        <section className="container mx-auto lg:flex lg:flex-wrap lg:justify-center">
+        <section className="projects-section container mx-auto">
           <ProjectCard
             image="/anime-ai-image.png"
             text="Zenshin Labs"
@@ -68,7 +95,7 @@ export default function Projects() {
           <ProjectCard
             image="/tonem-ai-image.png"
             text="TŌNEM"
-            description="Serenity in Sonic Vibrations"
+            description="Where Serenity in Sonic Vibrations"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />

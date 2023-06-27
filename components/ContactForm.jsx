@@ -57,7 +57,6 @@ export default function ContactForm() {
     return isValid;
   };
 
-  //* Handling form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     let isValidForm = handleValidation();

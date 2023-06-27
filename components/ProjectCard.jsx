@@ -1,22 +1,22 @@
-//* Importing required modules
 import React from "react";
 import Image from "next/image";
 
-//* The ProjectCard component is responsible for rendering a single project card, including an image, description and related links.
+//* The ProjectCard component is responsible for rendering a single project card
 export default function ProjectCard({
-  //* Props destructuring to extract required properties
+  className,
   image,
   text,
   description,
   linkText,
   href,
-  showCodeLink = false, //* Default to not show the link to code
+  showCodeLink = false,
   codeLink,
   codeLinkText = "View Code",
 }) {
   return (
-    // * The 'article' tag is used to represent a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
-    <article className="project-card mb-5 py-10 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-2xl space-y-2 sm:space-y-0 flex flex-col items-center text-center">
+    <article
+      className={`mb-5 py-10 px-10 max-w-xs sm:max-w-sm lg:w-[310px] mx-auto bg-white rounded-xl shadow-2xl flex flex-col items-center text-center ${className}`}
+    >
       <Image
         src={image}
         alt={text}
@@ -24,7 +24,11 @@ export default function ProjectCard({
         width={160}
         height={160}
       />
-      <div className="space-y-2">
+      <div
+        className={
+          showCodeLink ? "space-y-2 flex flex-col" : "space-y-6 flex flex-col"
+        }
+      >
         <div className="space-y-0.5 mb-3">
           <p className="text-lg text-black font-semibold">{text}</p>
           <p className="text-slate-500 font-medium">{description}</p>
@@ -42,7 +46,7 @@ export default function ProjectCard({
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-3"
+            className="btn-3 mx-0"
           >
             {codeLinkText}
           </a>

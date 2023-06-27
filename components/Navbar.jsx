@@ -105,7 +105,7 @@ export default function Navbar() {
             </Link>
             <Link
               className="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-500"
-              href="https://allan-hillman-resume.tiiny.site/"
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5d34d67a-bcd2-4d6b-b6ba-636963a05d10"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -153,7 +153,7 @@ export default function Navbar() {
             {contact}
           </NavLink>
           <NavLink
-            href="https://allan-hillman-resume.tiiny.site/"
+            href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5d34d67a-bcd2-4d6b-b6ba-636963a05d10"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300 text-[rgb(var(--foreground-rgb))] ms-4"

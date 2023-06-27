@@ -17,7 +17,7 @@ export default function ProfileSection({ image, altText, title, description }) {
         />
       </div>
       <div className="mx-auto md:ml-5 text-center md:text-left flex flex-col justify-center">
-        <h2 className="text-3xl">{title}</h2>
+        <h2 className="text-4xl">{title}</h2>
         <p className="text-lg">{description}</p>
       </div>
     </section>

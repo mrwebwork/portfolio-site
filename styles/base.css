@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap");
+h1 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 400;
+}
+
+p, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.footer-text {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 642px) {
+  .display-name {
+    display: none;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .projects-container .projects-section {
+    width: 100%;
+  }
+  .projects-container .projects-section .project.card {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    min-width: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .projects-container {
+    max-width: 100%;
+  }
+  .container .projects-container .projects-section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container .projects-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=base.css.map */

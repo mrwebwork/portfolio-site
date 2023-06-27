@@ -35,7 +35,11 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation Button */}
-          <button className="mobile-menu-button p-2 focus:outline-none">
+          <button
+            aria-label="SVG Image Animation"
+            role="button"
+            className="mobile-menu-button p-2 focus:outline-none"
+          >
             <Svg
               width="50"
               height="50"

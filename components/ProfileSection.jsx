@@ -12,6 +12,7 @@ export default function ProfileSection({ image, altText, title, description }) {
           className="rounded-tr-3xl rounded-bl-3xl"
           src={image}
           alt={altText}
+          aria-label={altText}
           width={200}
           height={200}
         />

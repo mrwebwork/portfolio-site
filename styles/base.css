@@ -17,6 +17,12 @@
   font-weight: 400;
   src: url(Montserrat-Regular.woff) format("woff");
 }
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url(Montserrat-SemiBold.woff) format("woff");
+}
 h1 {
   font-family: "Montserrat-Medium", sans-serif;
   font-weight: 400;
@@ -35,6 +41,10 @@ a {
 p {
   font-family: "Montserrat-Light", sans-serif;
   font-weight: 300;
+}
+
+.btn-2, .btn-3 {
+  font-family: "Montserrat-SemiBold", sans-serif;
 }
 
 .footer-text {

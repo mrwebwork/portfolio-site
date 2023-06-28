@@ -1,0 +1,39 @@
+//* Importing SASS utilities
+@use "../sass-utils/variables" as v;
+
+//* Typography Styles
+h1 {
+  font-family: v.$font-montserrat;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: v.$font-montserrat;
+  font-weight: 500;
+}
+
+a {
+  font-family: v.$font-montserrat-regular;
+  font-weight: 500;
+}
+
+p {
+  font-family: v.$font-montserrat-light;
+  font-weight: 400;
+}
+
+.btn-2,
+.btn-3 {
+  font-family: v.$font-montserrat-semibold;
+  font-weight: 600;
+}
+
+.project-card-heading {
+  font-family: v.$font-montserrat-semibold;
+  font-weight: 500;
+}
+
+.footer-text {
+  font-family: v.$font-montserrat-light;
+  font-weight: 100;
+}

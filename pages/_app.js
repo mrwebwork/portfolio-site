@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 
-import "styles/base.scss";
+import "../styles/main.scss";
 
 import { Analytics } from "@vercel/analytics/react";
 
 import Footer from "@/components/Footer";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
@@ -15,4 +15,3 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-export default MyApp;

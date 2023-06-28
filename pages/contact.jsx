@@ -14,7 +14,7 @@ export default function Contact() {
           content="Let's connect! Reach out to discuss your web development needs, project ideas, or any other inquiries."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"

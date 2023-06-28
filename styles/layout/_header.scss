@@ -1,0 +1,10 @@
+//* Importing SASS utilities
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+//* Navbar Style
+@include m.media(v.$breakpoint_sm) {
+  .display-name {
+    display: none;
+  }
+}

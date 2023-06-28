@@ -13,7 +13,13 @@ export default function Review({
       <h2 className="review-client pt-5">~ {clientName}</h2>
       <div className="stars-container pt-5">
         {[...Array(rating)].map((_, i) => (
-          <img key={i} src="../star-image.png" alt="star-review-images" />
+          <img
+            key={i}
+            src="../star-image.png"
+            alt="star-review-images"
+            width={65}
+            height={60}
+          />
         ))}
       </div>
     </div>

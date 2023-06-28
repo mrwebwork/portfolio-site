@@ -18,6 +18,10 @@ body {
   background-color: rgb(var(--background-rgb));
 }
 
+svg {
+  display: inherit;
+}
+
 /** Button Styles */
 @layer components {
   .btn {

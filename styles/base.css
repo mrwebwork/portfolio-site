@@ -4,24 +4,28 @@
   font-style: normal;
   font-weight: 400;
   src: url(Montserrat-Medium.woff) format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Light";
   font-style: normal;
   font-weight: 100;
   src: url(Montserrat-Light.woff) format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: 400;
   src: url(Montserrat-Regular.woff) format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-SemiBold";
   font-style: normal;
   font-weight: 600;
   src: url(Montserrat-SemiBold.woff) format("woff");
+  font-display: swap;
 }
 h1 {
   font-family: "Montserrat-Medium", sans-serif;

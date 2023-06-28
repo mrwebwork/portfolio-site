@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-weight: 500;
 }
 
@@ -47,7 +47,8 @@ p {
   font-weight: 400;
 }
 
-.btn-2, .btn-3 {
+.btn-2,
+.btn-3 {
   font-family: "Montserrat-SemiBold", sans-serif;
   font-weight: 600;
 }

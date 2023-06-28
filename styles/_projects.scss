@@ -6,7 +6,7 @@
 // $breakpoint_2xl: 1280px; //? Large Desktop
 
 //* Mobile Devices
-@include media($breakpoint_xs) {
+@include media($breakpoint_xs) { 
     .projects-container {
         .projects-section {
             width: 100%;

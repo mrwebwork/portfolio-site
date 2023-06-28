@@ -7,8 +7,19 @@ import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/SkillSection";
+import Reviews from "@/components/Reviews";
+import ReviewButton from "@/components/ReviewButton";
 
 export default function Home() {
+  //* Reviews Data
+  const reviewsData = [
+    {
+      clientName: "Fiverr Client",
+      reviewText: "Amazing work!",
+      rating: 5,
+      clientImage: "/path/to/img.jpg",
+    },
+  ];
   return (
     <>
       <Head>
@@ -45,9 +56,9 @@ export default function Home() {
 
           {/* //* About Me */}
           <section className="text-center">
-            <h1 className="text-5xl py-5">My Story</h1>
+            <h1 className="text-5xl pb-5">My Story</h1>
           </section>
-          <Paragraph>
+          <Paragraph className="my-story-text">
             My journey started at Shopify, where I integrated payment systems
             and boosted site traffic by 40% through SEO strategies. I was
             instrumental in tailoring the e-commerce experience, building custom
@@ -55,12 +66,15 @@ export default function Home() {
             where I&apos;ve delivered 40+ websites with innovative UI/UX
             designs, securing higher conversion rates and customer satisfaction.
           </Paragraph>
-          <Paragraph>
+          <Paragraph className="my-story-text lg:mb-8">
             Web development is not just my profession—it&apos;s my passion. The
             thrill of learning new technologies, coupled with my ability to
             collaborate effectively, fuels my drive to create dynamic,
             user-friendly web experiences.
           </Paragraph>
+
+          {/* //* Reviews Section */}
+          <Reviews reviews={reviewsData} />
 
           {/* //* Skills Section */}
           <SkillSection />

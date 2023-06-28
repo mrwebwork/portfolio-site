@@ -69,7 +69,7 @@ export default function Projects() {
           <ProjectCard
             image="/montauk-ai-image.png"
             text="Montauk Group"
-            description="Custom 'Shop' pages engineered using Liquid, SCSS, HTML, and JS"
+            description="Built custom 'Shop' pages engineered using Liquid, SCSS, HTML, and JS"
             linkText="Shop Seaside"
             href="https://shopthemontaukgroup.com/pages/shop-womens"
           />

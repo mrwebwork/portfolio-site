@@ -131,7 +131,7 @@ export default function Navbar() {
         >
           {fullName}
         </Link>
-        <nav className="flex items-center text-xl">
+        <nav className="flex items-center text-xl lg:text-2xl">
           <NavLink
             href="/"
             className="mr-4 hover:text-gray-300 text-[rgb(var(--foreground-rgb))]"

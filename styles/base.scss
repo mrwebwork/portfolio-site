@@ -16,7 +16,6 @@ $breakpoint_2xl: 1280px; //? Large Desktop
 $font-montserrat: 'Montserrat-Medium', sans-serif;
 $font-montserrat-light: 'Montserrat-Light', sans-serif;
 $font-montserrat-regular: 'Montserrat-Regular', sans-serif;
-$font-montserrat-medium: 'Montserrat-Medium', sans-serif;
 $font-montserrat-semibold: 'Montserrat-SemiBold', sans-serif;
 $font-montserrat-bold: 'Montserrat-Bold', sans-serif;
 $font-montserrat-extra-bold: 'Montserrat-ExtraBold', sans-serif;
@@ -28,13 +27,22 @@ h1 {
 }
 
 h2 {
-    font-family: $font-montserrat;
+    font-family: $font-montserrat-regular;
+    font-weight: 500;
+}
+
+a {
+    font-family: $font-montserrat-regular;
     font-weight: 400;
 }
 
-p, a {
-    font-family: $font-montserrat;
-    font-weight: 400;
+p {
+    font-family: $font-montserrat-light;
+    font-weight: 300;
+}
+
+.btn-2, .btn-3 {
+    font-family: $font-montserrat-semibold;
 }
 
 .footer-text {

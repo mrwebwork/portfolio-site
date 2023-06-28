@@ -37,7 +37,7 @@ export default function Home() {
           {/* //* Heading for Home Page */}
           <Header
             pageHeader="Welcome to Allan Hillman's Digital Domain"
-            pageDesc="Building Interactive, High-Performing, and User-Friendly Online Experiences"
+            pageDesc="Building Interactive, High-Performing, and User-Friendly Websites"
           />
 
           {/* //* Hero Section */}

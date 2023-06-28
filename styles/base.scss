@@ -38,15 +38,17 @@ a {
 
 p {
     font-family: $font-montserrat-light;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .btn-2, .btn-3 {
     font-family: $font-montserrat-semibold;
+    font-weight: 600;
 }
 
 .project-card-heading {
     font-family: $font-montserrat-semibold;
+    font-weight: 500;
 }
 
 .footer-text {
@@ -76,5 +78,7 @@ p {
   }
 
 //* SCSS File Imports 
+@import "_paragraph";
+@import "_reviews";
 @import "_header";
 @import "_projects";

@@ -63,19 +63,9 @@ p {
   font-weight: 100;
 }
 
-@media only screen and (min-width: 375px) {
-  .my-story-text {
-    font-size: 18px;
-  }
-}
 @media only screen and (min-width: 642px) {
-  .my-story-text {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .my-story-text {
-    font-size: 22px;
+  .display-name {
+    display: none;
   }
 }
 @media only screen and (min-width: 375px) {
@@ -140,9 +130,19 @@ p {
     width: 50%;
   }
 }
+@media only screen and (min-width: 375px) {
+  .my-story-text {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 642px) {
-  .display-name {
-    display: none;
+  .my-story-text {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .my-story-text {
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 375px) {
@@ -174,4 +174,4 @@ p {
     display: flex;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=base.css.map */
+}/*# sourceMappingURL=main.css.map */

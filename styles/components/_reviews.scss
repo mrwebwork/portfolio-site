@@ -1,0 +1,68 @@
+//* Importing SASS utilities
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+//* Extra Small Mobile
+@include m.media(v.$breakpoint_xs) {
+  .review-card {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    .review-p {
+      font-family: v.$font-montserrat;
+    }
+    .review-client {
+      font-size: 23px;
+      font-family: v.$font-montserrat-light;
+    }
+    .review-card.fade-out {
+      opacity: 0;
+    }
+    .stars-container {
+      width: 65px;
+      margin: auto;
+      @include m.flex($flex_direction: row, $justify_content: center);
+    }
+  }
+  .reviews-btn {
+    font-family: v.$font-montserrat;
+    width: 85%;
+    font-size: 20px;
+    @include m.flex($justify_content: center);
+  }
+}
+
+//* Larger Mobile
+@include m.media(v.$breakpoint_sm) {
+  .stars-container {
+    width: 75px;
+  }
+
+  .reviews-btn {
+    width: 70%;
+    font-size: 25px;
+    padding: 12px 0;
+  }
+}
+
+//* Laptops/Computers
+@include m.media(v.$breakpoint_lg) {
+  .review-container {
+    border-radius: 0 175px;
+    margin: auto;
+    width: 70%;
+    @include m.flex($flex_direction: column);
+  }
+  .review-card {
+    width: 85%;
+    .review-client {
+      font-size: 27px;
+      font-family: v.$font-montserrat-light;
+    }
+  }
+  .reviews-btn {
+    width: 50%;
+  }
+}

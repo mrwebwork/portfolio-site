@@ -1,0 +1,25 @@
+//* Mixin for Media Queries
+@mixin media($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+//* Flexbox Mixin
+@mixin flex(
+  $flex: flex,
+  $flex_direction: null,
+  $justify_content: null,
+  $align_items: null
+) {
+  display: $flex;
+  @if $flex_direction != null {
+    flex-direction: $flex_direction;
+  }
+  @if $justify_content != null {
+    justify-content: $justify_content;
+  }
+  @if $align_items != null {
+    align-items: $align_items;
+  }
+}

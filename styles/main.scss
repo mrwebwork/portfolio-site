@@ -1,0 +1,17 @@
+//* Importing utility functions and variables
+@use "sass-utils/variables";
+@use "sass-utils/mixins";
+
+//* Importing base styles
+@use "base/fonts";
+@use "base/typography";
+
+//* Importing layout styles
+@use "layout/header";
+
+//* Importing component styles
+@use "components/reviews";
+@use "components/paragraph";
+
+//* Importing page specific styles
+@use "pages/projects";

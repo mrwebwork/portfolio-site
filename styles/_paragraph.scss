@@ -1,0 +1,18 @@
+@include media($breakpoint_xs) {
+    .my-story-text {
+        font-size: 18px;
+    }
+}
+
+@include media($breakpoint_sm) {
+    .my-story-text {
+        font-size: 20px;
+    }
+}
+
+@include media($breakpoint_lg) {
+    .my-story-text {
+        font-size: 22px;
+    }
+}
+

@@ -10,6 +10,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "custom-green": "#34d399",
+        "custom-green-darker": "#2cb883",
+      },
       screens: {
         md: "642px",
         lg: "992px",

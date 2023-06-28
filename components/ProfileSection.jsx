@@ -22,6 +22,7 @@ export default function ProfileSection({
           ariaLabel={altText}
           width={200}
           height={200}
+          loading="eager"
         />
       </div>
       <div className="mx-auto md:ml-5 text-center md:text-left flex flex-col justify-center">

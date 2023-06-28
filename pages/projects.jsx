@@ -16,7 +16,7 @@ export default function Projects() {
           content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"

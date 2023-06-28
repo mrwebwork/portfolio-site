@@ -1,0 +1,39 @@
+//* Importing SASS utilities
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+//* Mobile Devices
+@include m.media(v.$breakpoint_xs) {
+  .projects-container {
+    .projects-section {
+      width: 100%;
+      .project.card {
+        @include m.flex($align_items: center);
+      }
+    }
+  }
+}
+
+//* Tablet/Computer
+@include m.media(v.$breakpoint_lg) {
+  .container {
+    min-width: auto;
+    max-width: 1200px;
+    @include m.flex($justify_content: center);
+    .projects-container {
+      max-width: 100%;
+      .projects-section {
+        @include m.flex($flex_direction: row);
+      }
+    }
+  }
+}
+
+//* Widescreens
+@include m.media(v.$breakpoint_xl) {
+  .container {
+    .projects-container {
+      @include m.flex($justify_content: space-around);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+//* Importing SASS utilities
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+@include m.media(v.$breakpoint_xs) {
+  .my-story-text {
+    font-size: 18px;
+  }
+}
+
+@include m.media(v.$breakpoint_sm) {
+  .my-story-text {
+    font-size: 20px;
+  }
+}
+
+@include m.media(v.$breakpoint_lg) {
+  .my-story-text {
+    font-size: 22px;
+  }
+}

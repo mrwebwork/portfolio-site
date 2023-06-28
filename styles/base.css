@@ -1,21 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap");
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url(Montserrat-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: 100;
+  src: url(Montserrat-Light.woff) format("woff");
+}
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-weight: 400;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-weight: 400;
 }
 
 p, a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-weight: 400;
 }
 
 .footer-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Light", sans-serif;
   font-weight: 100;
 }
 

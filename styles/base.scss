@@ -33,7 +33,7 @@ h2 {
 
 a {
     font-family: $font-montserrat-regular;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 p {
@@ -42,6 +42,10 @@ p {
 }
 
 .btn-2, .btn-3 {
+    font-family: $font-montserrat-semibold;
+}
+
+.project-card-heading {
     font-family: $font-montserrat-semibold;
 }
 

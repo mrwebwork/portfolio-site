@@ -30,8 +30,10 @@ export default function ProjectCard({
         }
       >
         <div className="space-y-0.5 mb-3">
-          <p className="text-lg text-black font-semibold">{text}</p>
-          <p className="text-slate-500 font-medium">{description}</p>
+          <p className="text-lg text-black project-card-heading">{text}</p>
+          <p className="text-slate-500 project-card-description">
+            {description}
+          </p>
         </div>
         <a
           href={href}

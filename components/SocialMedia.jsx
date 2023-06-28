@@ -15,7 +15,7 @@ export default function SocialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin size={26} />
+        <FaLinkedin size={28} />
       </a>
 
       <a
@@ -25,7 +25,7 @@ export default function SocialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub size={26} />
+        <FaGithub size={28} />
       </a>
       <a
         aria-label="Link to Allan Hillman Fiverr Freelance Page"
@@ -34,7 +34,7 @@ export default function SocialMedia() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <TbBrandFiverr size={26} />
+        <TbBrandFiverr size={28} />
       </a>
     </div>
   );

@@ -9,4 +9,10 @@
   font-style: normal;
   font-weight: 100;
   src: url(Montserrat-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(Montserrat-Regular.woff) format("woff");
 }/*# sourceMappingURL=font-families.css.map */

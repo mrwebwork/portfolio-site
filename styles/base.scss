@@ -28,13 +28,18 @@ h1 {
 }
 
 h2 {
-    font-family: $font-montserrat;
+    font-family: $font-montserrat-regular;
+    font-weight: 500;
+}
+
+a {
+    font-family: $font-montserrat-regular;
     font-weight: 400;
 }
 
-p, a {
-    font-family: $font-montserrat;
-    font-weight: 400;
+p {
+    font-family: $font-montserrat-light;
+    font-weight: 300;
 }
 
 .footer-text {

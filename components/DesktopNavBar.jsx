@@ -18,7 +18,7 @@ export default function DesktopNavBar() {
       <div className="hidden container mx-auto md:flex md:justify-center pt-10 h-full">
         <nav className="flex text-xl lg:text-2xl">
           {links.map((link, index) => (
-            <li key={index} className="list-none mr-4 hover:text-gray-300">
+            <li key={index} className="list-none hover:text-gray-300">
               <NavLink href={link.path}>{link.text}</NavLink>
             </li>
           ))}

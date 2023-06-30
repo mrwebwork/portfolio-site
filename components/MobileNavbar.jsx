@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
 import { useAnimate, stagger, motion } from "framer-motion";
+
 import Link from "next/link";
+import NavLink from "@/styles/styled-components/NavLink";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -43,45 +46,82 @@ function useMenuAnimation(isOpen) {
 export default function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const scope = useMenuAnimation(isOpen);
+  const node = useRef();
+
+  //* Close menu when clicked outside
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (node.current && !node.current.contains(e.target)) {
+        closeMenu();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, closeMenu]);
 
   return (
-    <nav className="menu md:hidden pt-8 sticky top-0" ref={scope}>
-      <motion.button
-        className="menu-button"
-        whileTap={{ scale: 0.97 }}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        Navigation
-        <div className="arrow">
-          <svg width="15" height="15" viewBox="0 0 20 20">
-            <path d="M0 7 L 20 7 L 10 16" />
-          </svg>
-        </div>
-      </motion.button>
-      <ul
-        className={`menu-items ${
-          isOpen ? "menu-items-open" : "menu-items-closed"
-        }`}
-      >
-        <li>
-          <Link href="#home">Home</Link>
-        </li>
-        <li>
-          <Link href="#projects">Projects</Link>
-        </li>
-        <li>
-          <Link href="#reviews">Reviews</Link>
-        </li>
-        <li>
-          <Link href="#about">About</Link>
-        </li>
-        <li>
-          <Link href="#skills">Skills</Link>
-        </li>
-        <li>
-          <Link href="#contact">Contact</Link>
-        </li>
-      </ul>
+    <nav className="menu md:hidden pt-10" ref={scope}>
+      <div ref={node}>
+        <motion.button
+          className="menu-button"
+          whileTap={{ scale: 0.97 }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Navigation
+          <div className="arrow">
+            <svg width="15" height="15" viewBox="0 0 20 20">
+              <path d="M0 7 L 20 7 L 10 16" />
+            </svg>
+          </div>
+        </motion.button>
+        <ul
+          onClick={closeMenu}
+          className={`menu-items ${
+            isOpen ? "menu-items-open" : "menu-items-closed"
+          }`}
+        >
+          <li>
+            <NavLink className="nav-link" href="#home">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" href="#projects">
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" href="#reviews">
+              Reviews
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" href="#about">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" href="#skills">
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" href="#contact">
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

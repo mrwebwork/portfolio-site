@@ -8,6 +8,15 @@
 
   .menu-items {
     position: absolute;
+    width: 300px;
+    .nav-link {
+      color: v.$color-primary;
+      font-family: v.$font-montserrat-semibold;
+      &:hover {
+        text-decoration-color: v.$color-primary;
+        color: v.$color-primary-dark;
+      }
+    }
   }
 
   .menu-items-open {

@@ -1,0 +1,18 @@
+#hero,
+#skills,
+#projects,
+#reviews,
+#about,
+#contact {
+  // transition: all 0.5s ease-in-out;
+}
+
+body {
+  scroll-behavior: smooth;
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+svg {
+  display: inherit;
+}

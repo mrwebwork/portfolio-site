@@ -14,3 +14,30 @@ $font-montserrat-semibold: "Montserrat-SemiBold", sans-serif;
 $font-montserrat-bold: "Montserrat-Bold", sans-serif;
 $font-montserrat-extra-bold: "Montserrat-ExtraBold", sans-serif;
 $font-montserrat-italic: "Montserrat-Italic", sans-serif;
+
+//* Color Variables
+//? Primary Colors
+$color-primary: #0c394d;
+$color-primary-light: #c6e7e4;
+$color-primary-dark: #000000;
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-light: #{$color-primary-light};
+  --color-primary-dark: #{$color-primary-dark};
+  --foreground: var(--color-primary);
+  --background: var(--color-primary-light);
+}
+
+.dark {
+  --foreground: var(--color-primary-light);
+  --background: var(--color-primary);
+}
+
+.overlay-light {
+  background-color: var(--color-primary-light);
+}
+
+.overlay-dark {
+  background-color: var(--color-primary-dark);
+}

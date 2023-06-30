@@ -4,11 +4,12 @@ import Head from "next/head";
 
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
-import Paragraph from "@/components/Paragraph";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/SkillSection";
 import Reviews from "@/components/Reviews";
-import ReviewButton from "@/components/ReviewButton";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import About from "@/components/About";
 
 export default function Home() {
   //* Reviews Data
@@ -23,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Allan Hillman - Software Engineer | Home</title>
+        <title>Allan Hillman - Software Engineer</title>
         <meta
           name="description"
           content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."
@@ -42,42 +43,40 @@ export default function Home() {
         <meta property="og:url" content="https://allanhillman.com" />
       </Head>
 
-      <header className="container mx-auto text-white dark:text-black bg-black dark:bg-white flex flex-col">
+      <header id="home" className="container mx-auto flex flex-col">
+        {/* //* Navbar */}
         <Navbar />
         <main className="flex-grow flex flex-col">
-          {/* //* Heading for Home Page */}
+          {/* //* Header */}
           <Header
             pageHeader="Welcome to Allan Hillman's Digital Domain"
             pageDesc="Building Interactive, High-Performing, and User-Friendly Websites"
           />
 
-          {/* //* Hero Section */}
-          <HeroSection />
-
+          {/* //* Hero */}
+          <div id="hero">
+            <HeroSection />
+          </div>
+          {/* //* Skills */}
+          <div id="skills">
+            <SkillSection />
+          </div>
+          {/* //* Projects */}
+          <div id="projects">
+            <Projects />
+          </div>
+          {/* //* Reviews */}
+          <div id="reviews">
+            <Reviews reviews={reviewsData} />
+          </div>
           {/* //* About Me */}
-          <section className="text-center">
-            <h1 className="text-5xl pb-5">My Story</h1>
-          </section>
-          <Paragraph className="my-story-text">
-            My journey started at Shopify, where I integrated payment systems
-            and boosted site traffic by 40% through SEO strategies. I was
-            instrumental in tailoring the e-commerce experience, building custom
-            features using Liquid. Then, I dove into freelancing on Fiverr,
-            where I&apos;ve delivered 40+ websites with innovative UI/UX
-            designs, securing higher conversion rates and customer satisfaction.
-          </Paragraph>
-          <Paragraph className="my-story-text lg:mb-8">
-            Web development is not just my profession—it&apos;s my passion. The
-            thrill of learning new technologies, coupled with my ability to
-            collaborate effectively, fuels my drive to create dynamic,
-            user-friendly web experiences.
-          </Paragraph>
-
-          {/* //* Reviews Section */}
-          <Reviews reviews={reviewsData} />
-
-          {/* //* Skills Section */}
-          <SkillSection />
+          <div id="about">
+            <About />
+          </div>
+          {/* //* Contact */}
+          <div id="contact">
+            <Contact />
+          </div>
         </main>
       </header>
     </>

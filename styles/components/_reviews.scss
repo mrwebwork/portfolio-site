@@ -11,11 +11,11 @@
     opacity: 1;
     transition: opacity 2s ease-in-out;
     .review-p {
-      font-family: v.$font-montserrat;
+      font-family: v.$font-montserrat-light;
     }
     .review-client {
       font-size: 23px;
-      font-family: v.$font-montserrat-light;
+      font-family: v.$font-montserrat;
     }
     .review-card.fade-out {
       opacity: 0;
@@ -29,7 +29,6 @@
   .reviews-btn {
     font-family: v.$font-montserrat;
     width: 85%;
-    font-size: 20px;
     @include m.flex($justify_content: center);
   }
 }
@@ -49,20 +48,21 @@
 
 //* Laptops/Computers
 @include m.media(v.$breakpoint_lg) {
-  .review-container {
-    border-radius: 0 175px;
+  #reviews {
+    max-width: 955px;
     margin: auto;
-    width: 70%;
-    @include m.flex($flex_direction: column);
-  }
-  .review-card {
-    width: 85%;
-    .review-client {
-      font-size: 27px;
-      font-family: v.$font-montserrat-light;
+    .review-container {
+      border-radius: 0 175px;
+      @include m.flex($flex_direction: column);
     }
-  }
-  .reviews-btn {
-    width: 50%;
+    .review-card {
+      width: 85%;
+      .review-client {
+        font-size: 27px;
+      }
+    }
+    .reviews-btn {
+      width: 50%;
+    }
   }
 }

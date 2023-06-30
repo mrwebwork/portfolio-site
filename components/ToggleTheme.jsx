@@ -31,13 +31,13 @@ export default function ToggleTheme() {
   };
 
   //* Depending on the 'isDark' state, different icons are assigned to the 'icon' variable.
-  const icon = isDark ? <FaSun size={28} /> : <FaMoon size={28} />;
+  const icon = isDark ? <FaSun size={26} /> : <FaMoon size={26} />;
 
   return (
     <button
       role="button"
       aria-label="Toggle button for switching between night and light mode"
-      className="md:ps-3 md:pb-0"
+      className="md:pb-0"
       onClick={toggleTheme}
     >
       {icon}

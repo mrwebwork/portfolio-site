@@ -1,0 +1,71 @@
+@use "../sass-utils/variables" as v;
+
+.navbar {
+  position: relative;
+  .toggle {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+  }
+
+  .menu-nav {
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    top: 45px;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%),
+      0 4px 6px -2px rgb(71 63 79 / 16%);
+    transform: translateX(
+      100px
+    ); // changed from 'translateX(-100px)' to 'translateX(100px)'
+    transition: transform ease-in-out 0.2s;
+
+    &.show-menu {
+      width: 100%;
+      transform: translateX(0px);
+    }
+
+    li {
+      a,
+      span {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid black;
+      }
+    }
+
+    .mobile-nav-links {
+      color: v.$color-primary;
+    }
+    .mobile-toggle {
+      color: v.$color-primary;
+    }
+
+    .log-in {
+      color: #777;
+      border-top: 1px solid #efecec;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+.logout {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  color: #005bb3;
+}

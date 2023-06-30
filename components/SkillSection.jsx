@@ -38,10 +38,10 @@ export default function SkillSection() {
   return (
     <>
       <div className="text-center">
-        <h1 className="text-5xl py-10">Top Skills</h1>
+        <h1 className="text-5xl py-5">Top Skills</h1>
       </div>
 
-      <div className="icon-size flex flex-row justify-center space-x-4 pb-5 px-3">
+      <div className="icon-size flex flex-row justify-center space-x-4 py-5 px-3">
         <FaHtml5 size={iconSize} title="HTML5" />
         <FaCss3Alt size={iconSize} title="CSS3" />
         <FaSass size={iconSize} title="SASS" />

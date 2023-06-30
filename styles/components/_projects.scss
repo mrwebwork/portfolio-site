@@ -28,12 +28,3 @@
     }
   }
 }
-
-//* Widescreens
-@include m.media(v.$breakpoint_xl) {
-  .container {
-    .projects-container {
-      @include m.flex($justify_content: space-around);
-    }
-  }
-}

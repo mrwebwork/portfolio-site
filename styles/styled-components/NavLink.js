@@ -1,14 +1,16 @@
 "use client";
+
 import styled from "@emotion/styled";
+
 import Link from "next/link";
 
 const NavLink = styled(Link)`
   position: relative;
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground);
   text-decoration: none;
 
   &:hover {
-    color: rgb(var(--foreground-rgb));
+    color: var(--foreground);
   }
 
   ::before {
@@ -19,7 +21,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: -1px;
     left: 0;
-    background-color: rgb(var(--foreground-rgb));
+    background-color: var(--foreground);
     transform: scaleX(0);
     transform-origin: top left;
     transition: transform 0.3s ease;

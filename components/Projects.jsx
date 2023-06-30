@@ -2,39 +2,13 @@ import React from "react";
 
 import Head from "next/head";
 
-import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function Projects() {
   return (
     <>
-      <Head>
-        <title>Allan Hillman - My Projects | Web Developer & Designer</title>
-        <meta
-          name="description"
-          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Allan Hillman - My Projects | Web Developer & Designer"
-        />
-        <meta
-          property="og:description"
-          content="Explore a collection of my professional and personal web development projects, including websites created for clients worldwide."
-        />
-        <meta property="og:url" content="https://allanhillman.com" />
-      </Head>
-
-      <div className="projects-container mx-auto">
-        <Navbar />
-        {/* <Header
-          pageHeader="Websites & Personal Projects"
-          pageDesc="Showcasing my web development journey & creations"
-        /> */}
+      <div className="projects-container mx-auto pb-10">
         <Header
           pageHeader="From Concept to Code: My Web Creations"
           pageDesc="Where Creativity Meets Functionality"
@@ -44,7 +18,7 @@ export default function Projects() {
           <ProjectCard
             image="/tic-tac-toe.png"
             text="Tic Tac Toe"
-            description="An interactive game crafted with HTML, CSS, and JS, hosted via GitHub pages"
+            description="An interactive Tic Tac Toe game crafted with HTML, CSS, and JS, hosted via GitHub pages"
             linkText="Play Now"
             href="https://mrwebwork.github.io/tic-tac-toe/"
             showCodeLink={true}
@@ -53,8 +27,8 @@ export default function Projects() {
           <ProjectCard
             image="/spotify.png"
             text="Spotify Clone"
-            description="A dynamic clone leveraging Next.js, React.js, TypeScript, Tailwind, and Supabase"
-            linkText="In Progress"
+            description="A dynamic clone leveraging Next.js, React.js, TypeScript, Tailwind, Supabase, and Stripe"
+            linkText="Listen Now"
             href="https://github.com/mrwebwork/spotify"
             showCodeLink={true}
             codeLink={"https://github.com/mrwebwork/spotify"}
@@ -62,7 +36,7 @@ export default function Projects() {
         </section>
         <Header
           pageHeader="Bridging Ambitions with Technology"
-          pageDesc="Web Solutions for Global Clients"
+          pageDesc="E-commerce Web Solutions for Global Clients"
         />
         {/* //* Client Websites */}
         <section className="projects-section container mx-auto">
@@ -99,14 +73,14 @@ export default function Projects() {
           <ProjectCard
             image="/tonem-ai-image.png"
             text="TŌNEM"
-            description="Developed a dropshipping store, crafted landing pages, and established store tracking"
+            description="Developed dropshipping store, created mulitple landing pages, and integrated GA4 analytics"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />
           <ProjectCard
             image="/front-line-2-ai-image.png"
             text="Frontline Optics"
-            description="Constructed custom landing pages using Liquid sections and established email automation"
+            description="Constructed custom landing pages using Liquid sections and established email automation with Klaviyo"
             linkText="Shop Shades"
             href="https://frontline-optics.com/"
           />

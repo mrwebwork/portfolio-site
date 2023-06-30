@@ -3,6 +3,7 @@
 @use "sass-utils/mixins";
 
 //* Importing base styles
+@use "base/base";
 @use "base/fonts";
 @use "base/typography";
 
@@ -10,8 +11,15 @@
 @use "layout/header";
 
 //* Importing component styles
+@use "components/sidebar";
+@use "components/buttons";
+@use "components/contact";
 @use "components/reviews";
 @use "components/paragraph";
+@use "components/projects";
+@use "components/footer";
 
-//* Importing page specific styles
-@use "pages/projects";
+//* Tailwind Imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

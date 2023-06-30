@@ -1,4 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100&display=swap");
+:root {
+  --color-primary: #0c394d;
+  --color-primary-light: #c6e7e4;
+  --color-primary-dark: #000000;
+  --foreground: var(--color-primary);
+  --background: var(--color-primary-light);
+}
+
+.dark {
+  --foreground: var(--color-primary-light);
+  --background: var(--color-primary);
+}
+
+.overlay-light {
+  background-color: var(--color-primary-light);
+}
+
+.overlay-dark {
+  background-color: var(--color-primary-dark);
+}
+
+body {
+  scroll-behavior: smooth;
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+svg {
+  display: inherit;
+}
+
 @font-face {
   font-family: "Montserrat-Medium";
   font-style: normal;
@@ -68,6 +99,103 @@ p {
     display: none;
   }
 }
+.navbar {
+  position: relative;
+}
+.navbar .toggle {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+.navbar .menu-nav {
+  list-style: none;
+  position: absolute;
+  background: #fff;
+  top: 45px;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
+  font-size: 18px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  transform: translateX(100px);
+  transition: transform ease-in-out 0.2s;
+}
+.navbar .menu-nav.show-menu {
+  width: 100%;
+  transform: translateX(0px);
+}
+.navbar .menu-nav li a,
+.navbar .menu-nav li span {
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+.navbar .menu-nav .mobile-nav-links {
+  color: #0c394d;
+}
+.navbar .menu-nav .mobile-toggle {
+  color: #0c394d;
+}
+.navbar .menu-nav .log-in {
+  color: #777;
+  border-top: 1px solid #efecec;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.logout {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  color: #005bb3;
+}
+
+/** Button Styles */
+@layer components {
+  .btn {
+    @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;
+  }
+  .btn-2 {
+    @apply px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200  hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2;
+  }
+  .btn-3 {
+    @apply px-4 py-2 ms-3 text-sm text-white font-semibold rounded-full border border-purple-500 bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-colors duration-300;
+  }
+  .btn-4 {
+    @apply px-4 py-2 ms-3 text-sm text-white font-semibold rounded-full border border-custom-green bg-custom-green hover:bg-custom-green-darker focus:outline-none focus:ring-2 focus:ring-custom-green focus:ring-offset-2 transition-colors duration-300;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .contact-me-container {
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    width: 85%;
+    margin: auto;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-me-container {
+    width: 75%;
+    max-width: 475px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 @media only screen and (min-width: 375px) {
   .review-card {
     width: 90%;
@@ -77,11 +205,11 @@ p {
     transition: opacity 2s ease-in-out;
   }
   .review-card .review-p {
-    font-family: "Montserrat-Medium", sans-serif;
+    font-family: "Montserrat-Light", sans-serif;
   }
   .review-card .review-client {
     font-size: 23px;
-    font-family: "Montserrat-Light", sans-serif;
+    font-family: "Montserrat-Medium", sans-serif;
   }
   .review-card .review-card.fade-out {
     opacity: 0;
@@ -96,7 +224,6 @@ p {
   .reviews-btn {
     font-family: "Montserrat-Medium", sans-serif;
     width: 85%;
-    font-size: 20px;
     display: flex;
     justify-content: center;
   }
@@ -112,21 +239,22 @@ p {
   }
 }
 @media only screen and (min-width: 992px) {
-  .review-container {
-    border-radius: 0 175px;
+  #reviews {
+    max-width: 955px;
     margin: auto;
-    width: 70%;
+  }
+  #reviews .review-container {
+    border-radius: 0 175px;
     display: flex;
     flex-direction: column;
   }
-  .review-card {
+  #reviews .review-card {
     width: 85%;
   }
-  .review-card .review-client {
+  #reviews .review-card .review-client {
     font-size: 27px;
-    font-family: "Montserrat-Light", sans-serif;
   }
-  .reviews-btn {
+  #reviews .reviews-btn {
     width: 50%;
   }
 }
@@ -169,9 +297,22 @@ p {
     flex-direction: row;
   }
 }
-@media only screen and (min-width: 1024px) {
-  .container .projects-container {
-    display: flex;
-    justify-content: space-around;
-  }
-}/*# sourceMappingURL=main.css.map */
+.outline-footer {
+  border-top: 2px solid #000000;
+}
+.outline-footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outline-footer .footer-container .portfolio-repo-link {
+  font-size: 1.24rem;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/*# sourceMappingURL=main.css.map */

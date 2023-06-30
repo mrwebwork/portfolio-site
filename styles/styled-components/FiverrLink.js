@@ -6,7 +6,7 @@ const FiverrLink = styled.a`
   color: ${(props) =>
     props.theme === "dark"
       ? "rgb(16, 185, 129)"
-      : "rgb(52, 211, 153)"}; // green-500 for dark, green-400 for light
+      : "rgb(16, 185, 129)"}; // green-500 for dark, green-400 for light
   text-decoration: none;
 
   &:hover {

@@ -3,11 +3,12 @@ import styled from "@emotion/styled";
 
 const FiverrLink = styled.a`
   position: relative;
+  text-decoration: underline;
+  text-underline-offset: 5px;
   color: ${(props) =>
     props.theme === "dark"
-      ? "rgb(16, 185, 129)"
+      ? "rgb(16, 185, 120)"
       : "rgb(16, 185, 129)"}; // green-500 for dark, green-400 for light
-  text-decoration: none;
 
   &:hover {
     color: ${(props) =>

@@ -7,6 +7,7 @@
   z-index: 1;
 
   .menu-items {
+    font-size: 1.2rem;
     position: absolute;
     width: 300px;
     background-color: var(--foreground);
@@ -15,7 +16,11 @@
       color: var(--background);
       font-family: v.$font-montserrat;
     }
+    .nav-link:hover {
+      text-decoration-color: var(--background);
+    }
     .theme-toggler {
+      padding: 10px 0 20px 20px;
       color: var(--background);
     }
   }

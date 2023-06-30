@@ -12,16 +12,7 @@
   --background: var(--color-primary);
 }
 
-.overlay-light {
-  background-color: var(--color-primary-light);
-}
-
-.overlay-dark {
-  background-color: var(--color-primary-dark);
-}
-
 body {
-  scroll-behavior: smooth;
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
 }
@@ -94,72 +85,86 @@ p {
   font-weight: 100;
 }
 
+.menu {
+  margin: auto;
+  filter: drop-shadow(1px 1px 1px #0c394d);
+  width: 300px;
+  z-index: 1;
+}
+.menu .menu-items {
+  font-size: 1.2rem;
+  position: absolute;
+  width: 300px;
+  background-color: var(--foreground);
+  color: var(--background);
+}
+.menu .menu-items .nav-link {
+  color: var(--background);
+  font-family: "Montserrat-Medium", sans-serif;
+}
+.menu .menu-items .nav-link:hover {
+  text-decoration-color: var(--background);
+}
+.menu .menu-items .theme-toggler {
+  padding: 10px 0 20px 20px;
+  color: var(--background);
+}
+.menu .menu-items-open {
+  pointer-events: auto;
+}
+.menu .menu-items-closed {
+  pointer-events: none;
+}
+.menu .arrow {
+  transform-origin: 50% 55%;
+}
+
 @media only screen and (min-width: 642px) {
   .display-name {
     display: none;
   }
 }
-.navbar {
-  position: relative;
-}
-.navbar .toggle {
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-}
-.navbar .menu-nav {
+ul,
+li {
   list-style: none;
-  position: absolute;
-  background: #fff;
-  top: 45px;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-  max-width: 290px;
-  z-index: 9;
-  font-size: 18px;
-  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  transform: translateX(100px);
-  transition: transform ease-in-out 0.2s;
-}
-.navbar .menu-nav.show-menu {
-  width: 100%;
-  transform: translateX(0px);
-}
-.navbar .menu-nav li a,
-.navbar .menu-nav li span {
-  display: block;
-  padding: 1rem;
-  border-bottom: 1px solid black;
-}
-.navbar .menu-nav .mobile-nav-links {
-  color: #0c394d;
-}
-.navbar .menu-nav .mobile-toggle {
-  color: #0c394d;
-}
-.navbar .menu-nav .log-in {
-  color: #777;
-  border-top: 1px solid #efecec;
-  margin-top: 15px;
-  font-size: 15px;
+  margin: 0;
+  padding: 20px 0 10px 20px;
 }
 
-.logout {
-  position: absolute;
-  right: 30px;
-  top: 40px;
+ul {
   display: flex;
-  gap: 2rem;
-  font-size: 20px;
-  color: #005bb3;
+  flex-direction: column;
+  gap: 10px;
+  background: #c6e7e4;
 }
 
-/** Button Styles */
+li {
+  color: #0c394d;
+  display: block;
+  transform-origin: -20px 50%;
+}
+
+.menu-button {
+  font-size: 1.5rem;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-button path {
+  fill: var(--background);
+}
+
 @layer components {
   .btn {
     @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;

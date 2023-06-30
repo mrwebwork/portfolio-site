@@ -1,54 +1,42 @@
 import { useState, useEffect, useRef } from "react";
-
-import { useAnimate, stagger, motion } from "framer-motion";
-
+import { motion, useAnimation } from "framer-motion";
 import NavLink from "@/styles/styled-components/NavLink";
 import ToggleTheme from "./ToggleTheme";
 
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
+const variants = {
+  open: { opacity: 1, scale: 1, clipPath: "inset(0% 0% 0% 0% round 10px)" },
+  closed: {
+    opacity: 0,
+    scale: 0.3,
+    clipPath: "inset(10% 50% 90% 50% round 10px)",
+  },
+};
 
-//* Animation
-function useMenuAnimation(isOpen) {
-  const [scope, animate] = useAnimate();
+const liVariants = {
+  open: { opacity: 1, scale: 1 },
+  closed: { opacity: 0, scale: 0.3 },
+};
 
-  useEffect(() => {
-    animate(".arrow", { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
+const arrowVariants = {
+  open: { rotate: 180 },
+  closed: { rotate: 0 },
+};
 
-    animate(
-      ".menu-items",
-      {
-        clipPath: isOpen
-          ? "inset(0% 0% 0% 0% round 10px)"
-          : "inset(10% 50% 90% 50% round 10px)",
-      },
-      {
-        type: "spring",
-        bounce: 0,
-        duration: 0.5,
-      }
-    );
-    animate(
-      "li",
-      isOpen
-        ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-        : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
-      {
-        duration: 0.2,
-        delay: isOpen ? staggerMenuItems : 0,
-      }
-    );
-  }, [isOpen]);
+const transition = {
+  type: "spring",
+  bounce: 0,
+  duration: 0.5,
+};
 
-  return scope;
-}
-
-//* Mobile Navbar
 export default function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const scope = useMenuAnimation(isOpen);
+  const controls = useAnimation();
   const node = useRef();
 
-  //* Close menu when clicked outside
+  useEffect(() => {
+    controls.start(isOpen ? "open" : "closed");
+  }, [controls, isOpen]);
+
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -69,72 +57,72 @@ export default function MobileNavbar() {
     };
   }, [isOpen, closeMenu]);
 
+  const links = [
+    { path: "#projects", text: "Projects" },
+    { path: "#reviews", text: "Reviews" },
+    { path: "#about", text: "About" },
+    { path: "#skills", text: "Skills" },
+    { path: "#contact", text: "Contact" },
+    {
+      path: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:34e21d7b-1a25-4596-9004-e37bc1bfddda",
+      text: "Resume",
+      isExternal: true,
+    },
+    { component: <ToggleTheme />, text: "Theme Toggler" },
+  ];
+
   return (
-    <nav className="menu md:hidden pt-10" ref={scope}>
-      <div ref={node}>
-        <motion.button
-          className="menu-button"
-          whileTap={{ scale: 0.97 }}
-          onClick={() => setIsOpen(!isOpen)}
+    <nav className="menu pt-10 md:hidden" ref={node}>
+      <motion.button
+        className="menu-button"
+        whileTap={{ scale: 0.97 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        Navigation
+        <motion.div
+          className="arrow"
+          variants={arrowVariants}
+          initial={false}
+          animate={controls}
         >
-          Navigation
-          <div className="arrow">
-            <svg width="15" height="15" viewBox="0 0 20 20">
-              <path d="M0 7 L 20 7 L 10 16" />
-            </svg>
-          </div>
-        </motion.button>
-        <ul
-          onClick={closeMenu}
-          className={`menu-items ${
-            isOpen ? "menu-items-open" : "menu-items-closed"
-          }`}
-        >
-          <li>
-            <NavLink className="nav-link" href="#home">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" href="#projects">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" href="#reviews">
-              Reviews
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" href="#about">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" href="#skills">
-              Skills
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" href="#contact">
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="nav-link"
-              href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:34e21d7b-1a25-4596-9004-e37bc1bfddda"
-              target="_blank"
-              rel="noopener noreferrer"
+          <svg width="15" height="15" viewBox="0 0 20 20">
+            <path d="M0 7 L 20 7 L 10 16" />
+          </svg>
+        </motion.div>
+      </motion.button>
+      <motion.ul
+        onClick={closeMenu}
+        className={`menu-items ${
+          isOpen ? "menu-items-open" : "menu-items-closed"
+        }`}
+        variants={variants}
+        initial={false}
+        animate={controls}
+        transition={transition}
+      >
+        {links.map((link, index) =>
+          link.component ? (
+            <motion.li
+              className="theme-toggler"
+              variants={liVariants}
+              key={index}
             >
-              Resume
-            </NavLink>
-          </li>
-          <li className="theme-toggler">
-            <ToggleTheme />
-          </li>
-        </ul>
-      </div>
+              {link.component}
+            </motion.li>
+          ) : (
+            <motion.li variants={liVariants} key={index}>
+              <NavLink
+                className="nav-link"
+                href={link.path}
+                target={link.isExternal ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}
+              >
+                {link.text}
+              </NavLink>
+            </motion.li>
+          )
+        )}
+      </motion.ul>
     </nav>
   );
 }

@@ -17,9 +17,25 @@ export default function ToggleTheme() {
   //* 'useEffect' hook is used to add or remove the 'dark' class to the document element depending on the 'isDark' state, and also save the current theme to local storage.
   useEffect(() => {
     if (isDark) {
+      document.documentElement.style.setProperty(
+        "--foreground",
+        "var(--color-primary-light)"
+      );
+      document.documentElement.style.setProperty(
+        "--background",
+        "var(--color-primary)"
+      );
       document.documentElement.classList.add("dark");
       window.localStorage.setItem("theme", "dark");
     } else {
+      document.documentElement.style.setProperty(
+        "--foreground",
+        "var(--color-primary)"
+      );
+      document.documentElement.style.setProperty(
+        "--background",
+        "var(--color-primary-light)"
+      );
       document.documentElement.classList.remove("dark");
       window.localStorage.setItem("theme", "light");
     }

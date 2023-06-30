@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import Link from "next/link";
-
 import NavLink from "@/styles/styled-components/NavLink";
 
 import ToggleTheme from "./ToggleTheme";

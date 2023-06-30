@@ -4,4 +4,21 @@
   margin: auto;
   filter: drop-shadow(1px 1px 1px v.$color-primary);
   width: 300px;
+
+  .menu-items {
+    position: absolute;
+    clippath: inset(10% 50% 90% 50% round 10px);
+  }
+
+  .menu-items-open {
+    pointer-events: auto;
+  }
+
+  .menu-items-closed {
+    pointer-events: none;
+  }
+
+  .arrow {
+    transform-origin: 50% 55%;
+  }
 }

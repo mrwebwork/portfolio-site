@@ -11,9 +11,8 @@ function useMenuAnimation(isOpen) {
   useEffect(() => {
     animate(".arrow", { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
 
-    // if (isOpen) {
     animate(
-      "ul",
+      ".menu-items",
       {
         clipPath: isOpen
           ? "inset(0% 0% 0% 0% round 10px)"
@@ -35,7 +34,6 @@ function useMenuAnimation(isOpen) {
         delay: isOpen ? staggerMenuItems : 0,
       }
     );
-    // }
   }, [isOpen]);
 
   return scope;
@@ -54,18 +52,16 @@ export default function MobileNavbar() {
         onClick={() => setIsOpen(!isOpen)}
       >
         Navigation
-        <div className="arrow" style={{ transformOrigin: "50% 55%" }}>
+        <div className="arrow">
           <svg width="15" height="15" viewBox="0 0 20 20">
             <path d="M0 7 L 20 7 L 10 16" />
           </svg>
         </div>
       </motion.button>
-      {/* {isOpen && ( */}
       <ul
-        style={{
-          pointerEvents: isOpen ? "auto" : "none",
-          clipPath: "inset(10% 50% 90% 50% round 10px)",
-        }}
+        className={`menu-items ${
+          isOpen ? "menu-items-open" : "menu-items-closed"
+        }`}
       >
         <li>
           <Link href="#home">Home</Link>
@@ -86,7 +82,6 @@ export default function MobileNavbar() {
           <Link href="#contact">Contact</Link>
         </li>
       </ul>
-      {/* )} */}
     </nav>
   );
 }

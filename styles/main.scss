@@ -8,10 +8,11 @@
 @use "base/typography";
 
 //* Importing layout styles
+@use "layout/menu";
 @use "layout/header";
 
 //* Importing component styles
-@use "components/sidebar";
+@use "components/list";
 @use "components/buttons";
 @use "components/contact";
 @use "components/reviews";

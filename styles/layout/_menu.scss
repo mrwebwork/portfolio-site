@@ -1,0 +1,7 @@
+@use "../sass-utils/variables" as v;
+
+.menu {
+  margin: auto;
+  filter: drop-shadow(1px 1px 1px v.$color-primary);
+  width: 300px;
+}

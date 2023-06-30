@@ -1,69 +1,92 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useAnimate, stagger, motion } from "framer-motion";
+import Link from "next/link";
 
-import NavLink from "@/styles/styled-components/NavLink";
+const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
-import ToggleTheme from "./ToggleTheme";
-
-import { MdClose } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
-
-export default function MobileNavbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
-  const ref = useRef();
+//* Animation
+function useMenuAnimation(isOpen) {
+  const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    const handler = (event) => {
-      if (navbarOpen && ref.current && !ref.current.contains(event.target)) {
-        setNavbarOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, [navbarOpen]);
+    animate(".arrow", { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
 
-  const links = [
-    { path: "#home", text: "Home" },
-    { path: "#projects", text: "Projects" },
-    { path: "#skills", text: "Skills" },
-    { path: "#reviews", text: "Reviews" },
-    { path: "#about", text: "About" },
-    { path: "#contact", text: "Contact" },
-  ];
+    // if (isOpen) {
+    animate(
+      "ul",
+      {
+        clipPath: isOpen
+          ? "inset(0% 0% 0% 0% round 10px)"
+          : "inset(10% 50% 90% 50% round 10px)",
+      },
+      {
+        type: "spring",
+        bounce: 0,
+        duration: 0.5,
+      }
+    );
+    animate(
+      "li",
+      isOpen
+        ? { opacity: 1, scale: 1, filter: "blur(0px)" }
+        : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
+      {
+        duration: 0.2,
+        delay: isOpen ? staggerMenuItems : 0,
+      }
+    );
+    // }
+  }, [isOpen]);
+
+  return scope;
+}
+
+//* Mobile Navbar
+export default function MobileNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const scope = useMenuAnimation(isOpen);
 
   return (
-    //* Mobile Navbar
-    <>
-      <nav ref={ref} className="navbar md:hidden">
-        <div className="navbar-top">
-          <button className="toggle" onClick={() => setNavbarOpen(!navbarOpen)}>
-            {navbarOpen ? (
-              <MdClose style={{ width: "32px", height: "32px" }} />
-            ) : (
-              <FiMenu
-                style={{
-                  width: "32px",
-                  height: "32px",
-                }}
-              />
-            )}
-          </button>
+    <nav className="menu md:hidden pt-8 sticky top-0" ref={scope}>
+      <motion.button
+        className="menu-button"
+        whileTap={{ scale: 0.97 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        Navigation
+        <div className="arrow" style={{ transformOrigin: "50% 55%" }}>
+          <svg width="15" height="15" viewBox="0 0 20 20">
+            <path d="M0 7 L 20 7 L 10 16" />
+          </svg>
         </div>
-        <ul className={`rounded-lg menu-nav${navbarOpen ? " show-menu" : ""}`}>
-          {links.map((link, index) => (
-            <li key={index} onClick={() => setNavbarOpen(false)}>
-              <NavLink className="mobile-nav-links" href={link.path}>
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-          <div className="mobile-toggle py-3 text-center">
-            <ToggleTheme />
-          </div>
-        </ul>
-      </nav>
-    </>
+      </motion.button>
+      {/* {isOpen && ( */}
+      <ul
+        style={{
+          pointerEvents: isOpen ? "auto" : "none",
+          clipPath: "inset(10% 50% 90% 50% round 10px)",
+        }}
+      >
+        <li>
+          <Link href="#home">Home</Link>
+        </li>
+        <li>
+          <Link href="#projects">Projects</Link>
+        </li>
+        <li>
+          <Link href="#reviews">Reviews</Link>
+        </li>
+        <li>
+          <Link href="#about">About</Link>
+        </li>
+        <li>
+          <Link href="#skills">Skills</Link>
+        </li>
+        <li>
+          <Link href="#contact">Contact</Link>
+        </li>
+      </ul>
+      {/* )} */}
+    </nav>
   );
 }

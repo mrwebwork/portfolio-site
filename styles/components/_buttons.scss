@@ -1,4 +1,28 @@
-/** Button Styles */
+@use "../sass-utils/variables" as v;
+
+.menu-button {
+  font-family: v.$font-montserrat-semibold;
+  -webkit-appearance: button;
+  background: v.$color-primary-light;
+  color: v.$color-primary;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  path {
+    fill: v.$color-primary;
+  }
+}
+
 @layer components {
   .btn {
     @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;

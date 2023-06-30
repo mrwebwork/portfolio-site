@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 
 import { useAnimate, stagger, motion } from "framer-motion";
 
-import Link from "next/link";
 import NavLink from "@/styles/styled-components/NavLink";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });

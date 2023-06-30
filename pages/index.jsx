@@ -48,10 +48,12 @@ export default function Home() {
         <Navbar />
         <main className="flex-grow flex flex-col">
           {/* //* Header */}
-          <Header
-            pageHeader="Welcome to Allan Hillman's Digital Domain"
-            pageDesc="Building Interactive, High-Performing, and User-Friendly Websites"
-          />
+          <div id="header">
+            <Header
+              pageHeader="Welcome to Allan Hillman's Digital Domain"
+              pageDesc="Building Interactive, High-Performing, and User-Friendly Websites"
+            />
+          </div>
 
           {/* //* Hero */}
           <div id="hero">

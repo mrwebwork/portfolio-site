@@ -20,6 +20,16 @@
   background-color: var(--color-primary-dark);
 }
 
+#header,
+#hero,
+#skills,
+#projects,
+#reviews,
+#about,
+#contact {
+  transition: all 0.5s ease-in-out;
+}
+
 body {
   scroll-behavior: smooth;
   color: rgb(var(--foreground-rgb));

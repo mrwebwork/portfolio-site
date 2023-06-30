@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 
 import NavLink from "@/styles/styled-components/NavLink";
+import ToggleTheme from "./ToggleTheme";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -118,6 +119,19 @@ export default function MobileNavbar() {
             <NavLink className="nav-link" href="#contact">
               Contact
             </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="nav-link"
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:34e21d7b-1a25-4596-9004-e37bc1bfddda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </NavLink>
+          </li>
+          <li className="theme-toggler">
+            <ToggleTheme />
           </li>
         </ul>
       </div>

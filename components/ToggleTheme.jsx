@@ -2,17 +2,13 @@ import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ToggleTheme() {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = window.localStorage.getItem("theme");
-      if (storedTheme) {
-        return storedTheme === "dark";
-      }
-      return null;
-    } else {
-      return false;
-    }
-  });
+  const [isDark, setIsDark] = useState(null);
+
+  useEffect(() => {
+    // Now we're in the "effect", we can safely access `window`
+    let storedTheme = window.localStorage.getItem("theme");
+    setIsDark(storedTheme ? storedTheme === "dark" : false);
+  }, []); // Run this effect once on component mount
 
   useEffect(() => {
     if (isDark === null) {
@@ -31,7 +27,7 @@ export default function ToggleTheme() {
     document.documentElement.style.setProperty("--background", backgroundColor);
     document.documentElement.classList.toggle("dark", isDark);
     window.localStorage.setItem("theme", theme);
-  }, [isDark]);
+  }, [isDark]); // Run this effect when `isDark` changes
 
   const toggleTheme = () => {
     setIsDark((prevIsDark) => !prevIsDark);

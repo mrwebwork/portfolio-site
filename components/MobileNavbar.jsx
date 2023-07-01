@@ -61,6 +61,7 @@ export default function MobileNavbar() {
   }, [isOpen, closeMenu]);
 
   const links = [
+    // { path: "home", text: "Home" },
     { path: "projects", text: "Projects" },
     { path: "reviews", text: "Reviews" },
     { path: "about", text: "About" },
@@ -126,7 +127,7 @@ export default function MobileNavbar() {
           ) : (
             <motion.li variants={liVariants} key={index}>
               <ScrollLink
-                className="nav-link"
+                className="nav-link cursor-pointer"
                 to={link.path}
                 smooth={true}
                 duration={500}

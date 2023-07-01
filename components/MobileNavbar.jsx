@@ -1,6 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import { motion, useAnimation } from "framer-motion";
-import NavLink from "@/styles/styled-components/NavLink";
+
+import { Link as ScrollLink } from "react-scroll";
+
 import ToggleTheme from "./ToggleTheme";
 
 const variants = {
@@ -58,11 +61,11 @@ export default function MobileNavbar() {
   }, [isOpen, closeMenu]);
 
   const links = [
-    { path: "#projects", text: "Projects" },
-    { path: "#reviews", text: "Reviews" },
-    { path: "#about", text: "About" },
-    { path: "#skills", text: "Skills" },
-    { path: "#contact", text: "Contact" },
+    { path: "projects", text: "Projects" },
+    { path: "reviews", text: "Reviews" },
+    { path: "about", text: "About" },
+    { path: "skills", text: "Skills" },
+    { path: "contact", text: "Contact" },
     {
       path: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:34e21d7b-1a25-4596-9004-e37bc1bfddda",
       text: "Resume",
@@ -109,16 +112,27 @@ export default function MobileNavbar() {
             >
               {link.component}
             </motion.li>
-          ) : (
+          ) : link.isExternal ? (
             <motion.li variants={liVariants} key={index}>
-              <NavLink
+              <a
                 className="nav-link"
                 href={link.path}
-                target={link.isExternal ? "_blank" : undefined}
-                rel={link.isExternal ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {link.text}
-              </NavLink>
+              </a>
+            </motion.li>
+          ) : (
+            <motion.li variants={liVariants} key={index}>
+              <ScrollLink
+                className="nav-link"
+                to={link.path}
+                smooth={true}
+                duration={500}
+              >
+                {link.text}
+              </ScrollLink>
             </motion.li>
           )
         )}

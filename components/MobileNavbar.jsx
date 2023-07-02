@@ -8,7 +8,7 @@ import ToggleTheme from "./ToggleTheme";
 
 import NavLink from "@/styles/styled-components/NavLink";
 
-// Define ScrollLink as a dynamic import
+//* Define ScrollLink as a dynamic import
 const ScrollLink = dynamic(
   () => import("react-scroll").then((mod) => mod.Link),
   {

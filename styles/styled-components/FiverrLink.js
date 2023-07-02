@@ -5,17 +5,13 @@ const FiverrLink = styled.a`
   position: relative;
   text-decoration: underline;
   text-underline-offset: 5px;
-  color: ${(props) =>
-    props.theme === "dark"
-      ? "rgb(16, 185, 120)"
-      : "rgb(16, 185, 129)"}; // green-500 for dark, green-400 for light
+  /* color: ${(props) =>
+    props.theme === "dark" ? "rgb(16, 185, 120)" : "rgb(16, 185, 129)"} */
 
-  &:hover {
+  /* &:hover {
     color: ${(props) =>
-      props.theme === "dark"
-        ? "rgb(6, 95, 70)"
-        : "rgb(16, 185, 129)"}; // green-600 for dark, green-500 for light
-  }
+    props.theme === "dark" ? "rgb(6, 95, 70)" : "rgb(16, 185, 129)"}; 
+  } */
 
   ::before {
     content: "";

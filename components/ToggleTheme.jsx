@@ -5,7 +5,6 @@ export default function ToggleTheme() {
   const [isDark, setIsDark] = useState(null);
 
   useEffect(() => {
-    // Now we're in the "effect", we can safely access `window`
     let storedTheme = window.localStorage.getItem("theme");
     setIsDark(storedTheme ? storedTheme === "dark" : false);
   }, []); // Run this effect once on component mount

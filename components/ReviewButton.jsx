@@ -8,7 +8,7 @@ export default function ReviewButton() {
           href="https://www.fiverr.com/allanhillman"
           target="_blank"
           rel="noopener noreferrer"
-          className="reviews-btn btn-4 w-100 text-black text-lg"
+          className="reviews-btn btn-4 w-100 text-black text-lg shadow-md"
         >
           Read All Reviews
         </a>

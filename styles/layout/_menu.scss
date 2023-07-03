@@ -1,0 +1,37 @@
+@use "../sass-utils/variables" as v;
+
+.menu {
+  margin: auto;
+  filter: drop-shadow(1px 1px 1px v.$color-primary);
+  width: 300px;
+  z-index: 1;
+
+  .menu-items {
+    font-size: 1.2rem;
+    position: absolute;
+    width: 300px;
+    background-color: var(--foreground);
+    color: var(--background);
+    .nav-link {
+      color: var(--background);
+      font-family: v.$font-montserrat-regular;
+    }
+
+    .theme-toggler {
+      padding: 10px 0 20px 20px;
+      color: var(--background);
+    }
+  }
+
+  .menu-items-open {
+    pointer-events: auto;
+  }
+
+  .menu-items-closed {
+    pointer-events: none;
+  }
+
+  .arrow {
+    transform-origin: 50% 55%;
+  }
+}

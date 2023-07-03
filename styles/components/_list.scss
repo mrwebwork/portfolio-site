@@ -1,0 +1,21 @@
+@use "../sass-utils/variables" as v;
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 10px 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: v.$color-primary-light;
+}
+
+li {
+  color: v.$color-primary;
+  display: block;
+  transform-origin: -20px 50%;
+}

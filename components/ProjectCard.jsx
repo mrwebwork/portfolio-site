@@ -39,7 +39,7 @@ export default function ProjectCard({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-2"
+          className="btn-2 shadow-lg hover:shadow-xl"
         >
           {linkText}
         </a>
@@ -48,7 +48,7 @@ export default function ProjectCard({
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-3 mx-0"
+            className="btn-3 mx-0 shadow-lg hover:shadow-xl"
           >
             {codeLinkText}
           </a>

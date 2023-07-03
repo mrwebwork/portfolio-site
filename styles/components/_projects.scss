@@ -11,6 +11,9 @@
         @include m.flex($align_items: center);
       }
     }
+    .projects-second-section {
+      display: block;
+    }
   }
 }
 

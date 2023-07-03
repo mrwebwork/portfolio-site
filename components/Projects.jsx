@@ -62,14 +62,7 @@ export default function Projects() {
             href="https://togetherbeverages.com/"
           />
         </section>
-        <section className="projects-section container mx-auto">
-          <ProjectCard
-            image="/anime-ai-image.png"
-            text="Zenshin Labs"
-            description="Designed several landing templates, and executed end-to-end store development"
-            linkText="Shop Anime"
-            href="https://zenshinlabs.com/"
-          />
+        <section className="projects-second-section container mx-auto">
           <ProjectCard
             image="/tonem-ai-image.png"
             text="TŌNEM"

@@ -25,7 +25,7 @@ export default function DesktopNavBar() {
 
   return (
     <>
-      <div className="hidden container mx-auto md:flex md:justify-center pt-10 h-full">
+      <div className="hidden container mx-auto 2md:flex 2md:justify-center pt-10 h-full">
         <nav className="flex text-xl lg:text-2xl">
           {links.map((link, index) =>
             link.isExternal ? (

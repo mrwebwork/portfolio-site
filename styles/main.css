@@ -12,6 +12,13 @@
   --background: var(--color-primary);
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
@@ -100,10 +107,7 @@ p {
 }
 .menu .menu-items .nav-link {
   color: var(--background);
-  font-family: "Montserrat-Medium", sans-serif;
-}
-.menu .menu-items .nav-link:hover {
-  text-decoration-color: var(--background);
+  font-family: "Montserrat-Regular", sans-serif;
 }
 .menu .menu-items .theme-toggler {
   padding: 10px 0 20px 20px;
@@ -124,31 +128,6 @@ p {
     display: none;
   }
 }
-.nav-bar-links {
-  position: relative;
-  color: var(--foreground);
-  text-decoration: none;
-}
-.nav-bar-links:hover {
-  color: var(--foreground);
-}
-.nav-bar-links ::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: -1px;
-  left: 0;
-  background-color: var(--foreground);
-  transform: scaleX(0);
-  transform-origin: top left;
-  transition: transform 0.3s ease;
-}
-.nav-bar-links:hover::before {
-  transform: scaleX(1);
-}
-
 ul,
 li {
   list-style: none;
@@ -295,10 +274,10 @@ li {
 }
 @media only screen and (min-width: 642px) {
   .my-story-text {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .my-story-text {
     font-size: 22px;
   }
@@ -310,6 +289,9 @@ li {
   .projects-container .projects-section .project.card {
     display: flex;
     align-items: center;
+  }
+  .projects-container .projects-second-section {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {

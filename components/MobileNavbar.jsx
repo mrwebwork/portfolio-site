@@ -78,7 +78,7 @@ export default function MobileNavbar() {
   ];
 
   return (
-    <nav className="menu pt-10 md:hidden" ref={node}>
+    <nav className="menu pt-10 2md:hidden" ref={node}>
       <motion.button
         className="menu-button"
         whileTap={{ scale: 0.97 }}

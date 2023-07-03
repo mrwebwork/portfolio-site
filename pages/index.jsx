@@ -61,10 +61,10 @@ export default function Home() {
         <meta property="og:url" content="https://allanhillman.com" />
       </Head>
 
-      <header id="home" className="container mx-auto flex flex-col">
+      <main id="home" className="container mx-auto flex flex-col">
         {/* //* Navbar */}
         <Navbar />
-        <main className="flex-grow flex flex-col">
+        <section className="flex-grow flex flex-col">
           {/* //* Header */}
           <div id="header">
             <Header
@@ -97,8 +97,8 @@ export default function Home() {
           <div id="contact">
             <Contact />
           </div>
-        </main>
-      </header>
+        </section>
+      </main>
     </>
   );
 }

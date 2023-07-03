@@ -40,7 +40,6 @@ export default function ToggleTheme() {
 
   return (
     <button
-      role="button"
       aria-label="Toggle button for switching between night and light mode"
       className="flex items-center sm:pt-2 sm:ps-4"
       onClick={toggleTheme}

@@ -13,7 +13,7 @@ export default function About() {
       <Paragraph className="my-story-text">
         As a Front-End Engineer, I bring ideas to life in the digital world.
         With a rich experience in platforms like Shopify and WordPress, and
-        proficiency in HTML5, CSS3, SASS, JavaScript, React.js, and Next.js.
+        proficiency in HTML, CSS, SASS, JavaScript, React.js, and Next.js.
       </Paragraph>
       <Paragraph className="my-story-text">
         I craft user-friendly interfaces for an exceptional online experience.

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 
 import { TbBrandFiverr } from "react-icons/tb";
 
@@ -28,6 +28,15 @@ export default function SocialMedia({ className, size = 28 }) {
         rel="noopener noreferrer"
       >
         <FaGithub size={size} />
+      </a>
+      <a
+        aria-label="Link to Allan Hillman Youtube Page"
+        className="ps-4"
+        href="https://www.youtube.com/@allanswebwork/featured"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaYoutube size={size} />
       </a>
       <a
         aria-label="Link to Allan Hillman Fiverr Freelance Page"

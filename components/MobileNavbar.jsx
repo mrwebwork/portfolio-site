@@ -1,20 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import dynamic from "next/dynamic";
-
 import { motion, useAnimation } from "framer-motion";
 
 import ToggleTheme from "./ToggleTheme";
 
 import NavLink from "@/styles/styled-components/NavLink";
 
-//* Define ScrollLink as a dynamic import
-const ScrollLink = dynamic(
-  () => import("react-scroll").then((mod) => mod.Link),
-  {
-    ssr: false,
-  }
-);
+import ScrollLink from "@/styles/styled-components/ScrollLink";
 
 const variants = {
   open: { opacity: 1, scale: 1, clipPath: "inset(0% 0% 0% 0% round 10px)" },
@@ -127,7 +119,7 @@ export default function MobileNavbar() {
             <motion.li variants={liVariants} key={index}>
               <NavLink
                 onClick={closeMenu}
-                className="nav-link"
+                className="nav-link mobile"
                 href={link.path}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -139,7 +131,7 @@ export default function MobileNavbar() {
             <motion.li variants={liVariants} key={index}>
               <ScrollLink
                 onClick={closeMenu}
-                className="nav-link cursor-pointer"
+                className="nav-link mobile"
                 to={link.path}
                 smooth={true}
                 duration={500}

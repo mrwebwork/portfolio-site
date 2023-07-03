@@ -11,8 +11,8 @@ export default function About() {
         <h1 className="text-5xl pb-5">About Me</h1>
       </div>
       <Paragraph className="my-story-text">
-        As a Software Engineer, I bring ideas to life in the digital world. With
-        a rich experience in platforms like Shopify and WordPress, and
+        As a Front-End Engineer, I bring ideas to life in the digital world.
+        With a rich experience in platforms like Shopify and WordPress, and
         proficiency in HTML5, CSS3, SASS, JavaScript, React.js, and Next.js.
       </Paragraph>
       <Paragraph className="my-story-text">

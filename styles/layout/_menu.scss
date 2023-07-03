@@ -14,11 +14,9 @@
     color: var(--background);
     .nav-link {
       color: var(--background);
-      font-family: v.$font-montserrat;
+      font-family: v.$font-montserrat-regular;
     }
-    .nav-link:hover {
-      text-decoration-color: var(--background);
-    }
+
     .theme-toggler {
       padding: 10px 0 20px 20px;
       color: var(--background);

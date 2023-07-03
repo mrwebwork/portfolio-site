@@ -1,18 +1,12 @@
 import React from "react";
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 import ToggleTheme from "./ToggleTheme";
 
 import NavLink from "@/styles/styled-components/NavLink";
 
-// Define ScrollLink as a dynamic import
-const ScrollLink = dynamic(
-  () => import("react-scroll").then((mod) => mod.Link),
-  {
-    ssr: false,
-  }
-);
+import ScrollLink from "@/styles/styled-components/ScrollLink";
 
 export default function DesktopNavBar() {
   const links = [
@@ -46,19 +40,16 @@ export default function DesktopNavBar() {
               </li>
             ) : (
               <li key={index} className="list-none hover:text-gray-300">
-                <NavLink href={"#" + link.path}>
-                  <ScrollLink
-                    className="nav-bar-links"
-                    activeClass="active"
-                    to={link.path}
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                  >
-                    {link.text}
-                  </ScrollLink>
-                </NavLink>
+                <ScrollLink
+                  activeClass="active"
+                  to={link.path}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  {link.text}
+                </ScrollLink>
               </li>
             )
           )}

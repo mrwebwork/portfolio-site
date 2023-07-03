@@ -1,10 +1,25 @@
 "use client";
+
 import styled from "@emotion/styled";
+
+const size = {
+  mobile: "375px",
+  tablet: "642px",
+  laptop: "992px",
+  desktop: "1024px",
+};
+
+export const tablet = (inner) => css`
+  @media (min-width: ${size.tablet}) {
+    ${inner};
+  }
+`;
 
 const FiverrLink = styled.a`
   position: relative;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4.7px;
+
   /* color: ${(props) =>
     props.theme === "dark" ? "rgb(16, 185, 120)" : "rgb(16, 185, 129)"} */
 

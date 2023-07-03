@@ -2,13 +2,21 @@
 
 import styled from "@emotion/styled";
 
-import Link from "next/link";
+import dynamic from "next/dynamic";
 
-const NavLink = styled(Link)`
+//* Define ScrollLink as a dynamic import
+const ScrollLinkImport = dynamic(
+  () => import("react-scroll").then((mod) => mod.Link),
+  {
+    ssr: false,
+  }
+);
+
+const ScrollLink = styled(ScrollLinkImport)`
   position: relative;
   color: var(--foreground);
   text-decoration: none;
-  text-underline-offset: 4.5px;
+  cursor: pointer;
 
   &:hover {
     color: var(--foreground);
@@ -42,4 +50,4 @@ const NavLink = styled(Link)`
   }
 `;
 
-export default NavLink;
+export default ScrollLink;

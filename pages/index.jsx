@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Allan Hillman - Software Engineer</title>
+        <title>Allan Hillman - Front-End Engineer</title>
         <meta
           name="description"
           content="Welcome to Allan Hillman's portfolio. Discover my journey in web development, my skills, experience, and the projects I've worked on."

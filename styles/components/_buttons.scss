@@ -27,10 +27,11 @@
     @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;
   }
   .btn-2 {
-    @apply px-4 py-2 text-sm text-purple-600 font-semibold rounded-full border border-purple-200  hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2;
+    @apply px-4 py-2 text-sm font-semibold border-2 hover:border-2 rounded-full text-foreground bg-background border-background hover:text-background hover:bg-foreground hover:border-transparent focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2;
   }
+
   .btn-3 {
-    @apply px-4 py-2 ms-3 text-sm text-white font-semibold rounded-full border border-purple-500 bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-colors duration-300;
+    @apply px-4 py-2 ms-3 text-sm text-background font-semibold rounded-full border-2 border-background bg-foreground hover:text-foreground hover:bg-background hover:border-2 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 transition-colors duration-300;
   }
   .btn-4 {
     @apply px-4 py-2 ms-3 text-sm text-white font-semibold rounded-full border border-custom-green bg-custom-green hover:bg-custom-green-darker focus:outline-none focus:ring-2 focus:ring-custom-green focus:ring-offset-2 transition-colors duration-300;

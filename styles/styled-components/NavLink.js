@@ -8,7 +8,7 @@ const NavLink = styled(Link)`
   position: relative;
   color: var(--foreground);
   text-decoration: none;
-  text-underline-offset: 4.5px;
+  text-underline-offset: 9.5px;
 
   &:hover {
     color: var(--foreground);
@@ -23,6 +23,7 @@ const NavLink = styled(Link)`
     bottom: -1px;
     left: 0;
     background-color: var(--foreground);
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
     transform-origin: top left;
     transition: transform 0.3s ease;

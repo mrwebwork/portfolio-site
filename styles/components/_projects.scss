@@ -11,9 +11,6 @@
         @include m.flex($align_items: center);
       }
     }
-    .projects-second-section {
-      display: block;
-    }
   }
 }
 
@@ -28,6 +25,10 @@
       .projects-section {
         @include m.flex($flex_direction: row);
       }
+    }
+    .projects-second-section {
+      max-width: 992px;
+      @include m.flex($flex_direction: row-reverse);
     }
   }
 }

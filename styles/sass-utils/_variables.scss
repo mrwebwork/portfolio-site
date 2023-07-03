@@ -27,6 +27,7 @@ $color-primary-dark: #000000;
   --color-primary-dark: #{$color-primary-dark};
   --foreground: var(--color-primary);
   --background: var(--color-primary-light);
+  --secondary: var(--color-primary-dark);
 }
 
 .dark {

@@ -78,7 +78,7 @@ export default function MobileNavbar() {
     { path: "skills", text: "Skills" },
     { path: "contact", text: "Contact" },
     {
-      path: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:34e21d7b-1a25-4596-9004-e37bc1bfddda",
+      path: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:82171787-3dcf-4c67-8eef-d00d3e63eabc",
       text: "Resume",
       isExternal: true,
     },

@@ -15,7 +15,7 @@ export default function ProjectCard({
 }) {
   return (
     <article
-      className={`mb-5 py-10 px-10 max-w-xs sm:max-w-sm lg:w-[310px] mx-auto bg-white rounded-xl shadow-2xl flex flex-col items-center text-center ${className}`}
+      className={`mb-5 py-10 px-10 max-w-xs sm:max-w-sm lg:w-[310px] mx-auto bg-white rounded-2xl shadow-2xl flex flex-col items-center text-center ${className}`}
     >
       <Image
         src={image}
@@ -39,7 +39,7 @@ export default function ProjectCard({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-2"
+          className="btn-2 shadow-lg hover:shadow-xl"
         >
           {linkText}
         </a>
@@ -48,7 +48,7 @@ export default function ProjectCard({
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-3 mx-0"
+            className="btn-3 mx-0 shadow-lg hover:shadow-xl"
           >
             {codeLinkText}
           </a>

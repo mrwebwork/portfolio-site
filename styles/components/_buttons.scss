@@ -1,0 +1,39 @@
+@use "../sass-utils/variables" as v;
+
+.menu-button {
+  font-size: 1.5rem;
+  font-family: v.$font-montserrat-semibold;
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  path {
+    fill: var(--background);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-full bg-violet-500 hover:bg-violet-600 text-white dark:bg-cyan-500 dark:hover:bg-cyan-600 dark:text-white w-6/12 h-7;
+  }
+  .btn-2 {
+    @apply px-4 py-2 text-sm font-semibold border-2 hover:border-2 rounded-full text-foreground bg-background border-background hover:text-background hover:bg-foreground hover:border-transparent focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2;
+  }
+
+  .btn-3 {
+    @apply px-4 py-2 ms-3 text-sm text-background font-semibold rounded-full border-2 border-background bg-foreground hover:text-foreground hover:bg-background hover:border-2 focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2 transition-colors duration-300;
+  }
+  .btn-4 {
+    @apply px-4 py-2 ms-3 text-sm text-white font-semibold rounded-full border border-custom-green bg-custom-green hover:bg-custom-green-darker focus:outline-none focus:ring-2 focus:ring-custom-green focus:ring-offset-2 transition-colors duration-300;
+  }
+}

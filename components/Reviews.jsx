@@ -61,7 +61,7 @@ export default function Reviews() {
   return (
     <div className="review-container container sm:mt-8 lg:border-solid lg:border-8 lg:border-emerald-400">
       <div className="review-heading">
-        <h1 className="text-5xl pt-10 text-center">Client Reviews</h1>
+        <h1 className="text-5xl pt-10 text-center">Testimonials</h1>
         {/* <h2 className="text-2xl">Client Review</h2> */}
       </div>
       <Review className={reviewClass} {...reviewsData[currentReviewIndex]} />

@@ -1,0 +1,24 @@
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+@include m.media(v.$breakpoint_xs) {
+  .contact-me-container {
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    width: 85%;
+    margin: auto;
+    font-size: 1.6rem;
+    @include m.flex(
+      $flex_direction: row,
+      $justify_content: space-around,
+      $align_items: center
+    );
+  }
+}
+@include m.media(v.$breakpoint_lg) {
+  .contact-me-container {
+    width: 75%;
+    max-width: 475px;
+    @include m.flex($flex_direction: row, $align_items: center);
+  }
+}

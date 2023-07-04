@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  content: [
+  purge: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,11 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        foreground: "var(--foreground)",
+        background: "var(--background)",
         "custom-green": "#34d399",
         "custom-green-darker": "#2cb883",
       },
       screens: {
         md: "642px",
+        "2md": "768px",
         lg: "992px",
         xl: "1024px;",
         "2xl": "1280px",

@@ -16,7 +16,7 @@ export default function Projects() {
         {/* //* Personal Projects */}
         <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
           <ProjectCard
-            image="/tic-tac-toe.png"
+            image="/images/tic-tac-toe.png"
             text="Tic Tac Toe"
             description="An interactive Tic Tac Toe game crafted with HTML, CSS, and JS, hosted via GitHub pages"
             linkText="Play Now"
@@ -25,7 +25,7 @@ export default function Projects() {
             codeLink={"https://github.com/mrwebwork/tic-tac-toe"}
           />
           <ProjectCard
-            image="/spotify.png"
+            image="/images/spotify.png"
             text="Spotify Clone"
             description="A dynamic clone leveraging Next.js, React.js, TypeScript, Tailwind, Supabase, and Stripe"
             linkText="Listen Now"
@@ -41,21 +41,21 @@ export default function Projects() {
         {/* //* Client Websites */}
         <section className="projects-section container mx-auto">
           <ProjectCard
-            image="/montauk-ai-image.png"
+            image="/images/montauk-ai-image.png"
             text="Montauk Group"
             description="Built custom 'Shop' pages engineered using Liquid, SCSS, HTML, and JS"
             linkText="Shop Seaside"
             href="https://shopthemontaukgroup.com/pages/shop-womens"
           />
           <ProjectCard
-            image="/yas-cycles-ai-image.png"
+            image="/images/yas-cycles-ai-image.png"
             text="Yas Mena Cycles"
             description="Entire store front developed leveraging Shopify 2.0 features"
             linkText="Shop Bikes"
             href="https://yascycles.com/"
           />
           <ProjectCard
-            image="/together-bev-ai-image.png"
+            image="/images/together-bev-ai-image.png"
             text="Together Beverages"
             description="Crafted a digital store from scratch, incorporated with a seamless POD app"
             linkText="Shop Drinks"
@@ -64,14 +64,14 @@ export default function Projects() {
         </section>
         <section className="projects-second-section container mx-auto">
           <ProjectCard
-            image="/tonem-ai-image.png"
+            image="/images/tonem-ai-image.png"
             text="TŌNEM"
             description="Developed dropshipping store, created mulitple landing pages, and integrated GA4 analytics"
             linkText="Shop Therapy"
             href="https://puretonetherapy.com/"
           />
           <ProjectCard
-            image="/front-line-2-ai-image.png"
+            image="/images/front-line-2-ai-image.png"
             text="Frontline Optics"
             description="Constructed custom landing pages using Liquid sections and established email automation with Klaviyo"
             linkText="Shop Shades"

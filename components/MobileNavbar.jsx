@@ -37,10 +37,18 @@ export default function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const controls = useAnimation();
   const node = useRef();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    controls.start(isOpen ? "open" : "closed");
-  }, [controls, isOpen]);
+    setIsMounted(true); //* Set isMounted to true once the component is mounted
+  }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      //* Only start the animation if the component is mounted
+      controls.start(isOpen ? "open" : "closed");
+    }
+  }, [controls, isOpen, isMounted]);
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -102,7 +110,7 @@ export default function MobileNavbar() {
           isOpen ? "menu-items-open" : "menu-items-closed"
         }`}
         variants={variants}
-        initial={false}
+        initial="closed"
         animate={controls}
         transition={transition}
       >

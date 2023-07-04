@@ -29,7 +29,7 @@ export default function Projects() {
             text="Spotify Clone"
             description="A dynamic clone leveraging Next.js, React.js, TypeScript, Tailwind, Supabase, and Stripe"
             linkText="Listen Now"
-            href="https://github.com/mrwebwork/spotify"
+            href="https://spotify-sigma-six.vercel.app/"
             showCodeLink={true}
             codeLink={"https://github.com/mrwebwork/spotify"}
           />

@@ -26,14 +26,9 @@
         @include m.flex($flex_direction: row);
       }
     }
-  }
-}
-
-//* Widescreens
-@include m.media(v.$breakpoint_xl) {
-  .container {
-    .projects-container {
-      @include m.flex($justify_content: space-around);
+    .projects-second-section {
+      max-width: 992px;
+      @include m.flex($flex_direction: row-reverse);
     }
   }
 }

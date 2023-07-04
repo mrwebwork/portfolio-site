@@ -1,20 +1,32 @@
 "use client";
+
 import styled from "@emotion/styled";
+
+const size = {
+  mobile: "375px",
+  tablet: "642px",
+  laptop: "992px",
+  desktop: "1024px",
+};
+
+export const tablet = (inner) => css`
+  @media (min-width: ${size.tablet}) {
+    ${inner};
+  }
+`;
 
 const FiverrLink = styled.a`
   position: relative;
-  color: ${(props) =>
-    props.theme === "dark"
-      ? "rgb(16, 185, 129)"
-      : "rgb(52, 211, 153)"}; // green-500 for dark, green-400 for light
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 4.7px;
 
-  &:hover {
+  /* color: ${(props) =>
+    props.theme === "dark" ? "rgb(16, 185, 120)" : "rgb(16, 185, 129)"} */
+
+  /* &:hover {
     color: ${(props) =>
-      props.theme === "dark"
-        ? "rgb(6, 95, 70)"
-        : "rgb(16, 185, 129)"}; // green-600 for dark, green-500 for light
-  }
+    props.theme === "dark" ? "rgb(6, 95, 70)" : "rgb(16, 185, 129)"}; 
+  } */
 
   ::before {
     content: "";

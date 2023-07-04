@@ -1,0 +1,16 @@
+@use "../sass-utils/variables" as v;
+@use "../sass-utils/mixins" as m;
+
+.outline-footer {
+  border-top: 2px solid v.$color-primary-dark;
+  .footer-container {
+    @include m.flex($flex_direction: column, $justify_content: center);
+    .portfolio-repo-link {
+      font-size: 1.24rem;
+      font-family: v.$font-montserrat;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 0.3rem;
+    }
+  }
+}

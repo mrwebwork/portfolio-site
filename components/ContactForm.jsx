@@ -96,7 +96,7 @@ export default function ContactForm() {
     }
   };
   return (
-    <main>
+    <>
       <section className="container mx-auto">
         <form
           onSubmit={handleSubmit}
@@ -199,7 +199,6 @@ export default function ContactForm() {
 
           <div className="flex flex-row items-center justify-start">
             <button
-              role="button"
               aria-label="Submit form button on Contact page"
               type="submit"
               className="px-10 mt-8 py-2 bg-gray-800 hover:bg-gray-950 dark:bg-gray-50 dark:hover:bg-gray-100 dark:text-black font-light rounded-md text-lg flex flex-row items-center"
@@ -209,6 +208,6 @@ export default function ContactForm() {
           </div>
         </form>
       </section>
-    </main>
+    </>
   );
 }

@@ -10,11 +10,11 @@
 
 @include m.media(v.$breakpoint_sm) {
   .my-story-text {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
-@include m.media(v.$breakpoint_lg) {
+@include m.media(v.$breakpoint_xl) {
   .my-story-text {
     font-size: 22px;
   }

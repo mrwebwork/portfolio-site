@@ -15,7 +15,7 @@ export default function Review({
         {[...Array(rating)].map((_, i) => (
           <img
             key={i}
-            src="../star-image.png"
+            src="../images/star-image.png"
             alt="star-review-images"
             width={65}
             height={60}

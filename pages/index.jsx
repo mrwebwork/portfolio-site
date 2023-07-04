@@ -52,7 +52,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Allan Hillman - Software Engineer | Home"
+          content="Allan Hillman - Front-End Engineer | Home"
         />
         <meta
           property="og:description"

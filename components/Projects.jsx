@@ -15,7 +15,7 @@ export default function Projects() {
         />
         {/* //* Personal Projects */}
         <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
-          <ProjectCard
+          {/* <ProjectCard
             image="/images/tic-tac-toe.png"
             text="Tic Tac Toe"
             description="An interactive Tic Tac Toe game crafted with HTML, CSS, and JS, hosted via GitHub pages"
@@ -23,7 +23,7 @@ export default function Projects() {
             href="https://mrwebwork.github.io/tic-tac-toe/"
             showCodeLink={true}
             codeLink={"https://github.com/mrwebwork/tic-tac-toe"}
-          />
+          /> */}
           <ProjectCard
             image="/images/spotify.png"
             text="Spotify Clone"

@@ -15,15 +15,15 @@ export default function Projects() {
         />
         {/* //* Personal Projects */}
         <section className="projects-section flex flex-col lg:flex-row lg:mx-auto lg:container lg:max-w-4xl">
-          {/* <ProjectCard
-            image="/images/tic-tac-toe.png"
-            text="Tic Tac Toe"
-            description="An interactive Tic Tac Toe game crafted with HTML, CSS, and JS, hosted via GitHub pages"
-            linkText="Play Now"
-            href="https://mrwebwork.github.io/tic-tac-toe/"
+          <ProjectCard
+            image="/images/firebase-logo.jpeg"
+            text="Firebase Auth Guide"
+            description="My tutorial to implement Firebase Authentication with Next.js and deploy using Firebase Hosting"
+            linkText="Register Now"
+            href="https://nextjs-firebase-auth-guide.web.app/"
             showCodeLink={true}
-            codeLink={"https://github.com/mrwebwork/tic-tac-toe"}
-          /> */}
+            codeLink={"https://github.com/mrwebwork/nextjs-firebase-auth-guide"}
+          />
           <ProjectCard
             image="/images/spotify.png"
             text="Spotify Clone"

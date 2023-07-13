@@ -45,7 +45,7 @@ export default function Projects() {
             text="Montauk Group"
             description="Built custom 'Shop' pages engineered using Liquid, SCSS, HTML, and JS"
             linkText="Shop Seaside"
-            href="https://shopthemontaukgroup.com/pages/shop-womens"
+            href="https://shopthemontaukgroup.com/"
           />
           <ProjectCard
             image="/images/yas-cycles-ai-image.png"
